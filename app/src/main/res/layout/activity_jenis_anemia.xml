@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backjenis"
+    tools:context=".Materi.JenisAnemiaActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/dotsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="20dp">
+    </LinearLayout>
+
+    <Button
+        android:fontFamily="monospace"
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparant"
+        android:text="BACK"
+        android:layout_marginBottom="4dp"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+    <Button
+        android:fontFamily="monospace"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_marginBottom="4dp"
+        android:id="@+id/next"
+        android:background="@color/transparant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT" />
+</RelativeLayout>

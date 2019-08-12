@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backjenis"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".Materi.PemeriksaanDiagActivity">
+
+    <TextView
+        android:id="@+id/judulDiagnosa"
+        android:background="@drawable/side_two"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="DIAGNOSA PEMERIKSAAN \nANEMIA"/>
+
+    <com.codesgood.views.JustifiedTextView
+        android:padding="@dimen/activity_margin"
+        android:id="@+id/subAnemia1"
+        android:text="@string/anemia1"
+        android:fontFamily="monospace"
+        android:layout_marginTop="25dp"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.codesgood.views.JustifiedTextView
+        android:padding="@dimen/activity_margin"
+        android:id="@+id/subAnemia2"
+        android:text="@string/anemia2"
+        android:fontFamily="monospace"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

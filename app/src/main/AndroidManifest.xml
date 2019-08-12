@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.anemia">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Materi.PenyebabActivity"></activity>
+        <activity android:name=".Materi.PengobatanActivity" />
+        <activity android:name=".Materi.AnemiaActivity" />
+        <activity android:name=".Materi.KomplikasiActivity" />
+        <activity android:name=".Materi.PemeriksaanDiagActivity" />
+        <activity android:name=".Materi.JenisAnemiaActivity" />
+        <activity android:name=".Materi.GejalaActivity" />
+        <activity android:name=".Menu.BantuanActivity" />
+        <activity android:name=".Menu.MateriActivity" />
+        <activity android:name=".Menu.TentangActivity" />
+        <activity android:name=".Menu.KuisActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
