@@ -25,7 +25,13 @@ public class SplashActivity extends AppCompatActivity {
                 finish(); //biar tidak kembali ke splash screen
             }
         }, 5000L);
+
+
     }
 
+    @Override
+    public void onBackPressed() {
+        onDestroy();
+    }
 }
 

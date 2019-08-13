@@ -94,8 +94,8 @@ public class JenisAnemiaActivity extends AppCompatActivity {
                 mButtonPrev.setEnabled(true);
                 mButtonPrev.setVisibility(View.VISIBLE);
 
-                mButtonNext.setText("Next");
-                mButtonPrev.setText("Finish");
+                mButtonNext.setText("Finish");
+                mButtonPrev.setText("Back");
 
             } else {
                 mButtonNext.setEnabled(true);

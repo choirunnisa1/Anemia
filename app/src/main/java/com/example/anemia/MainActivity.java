@@ -1,6 +1,8 @@
 package com.example.anemia;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -53,6 +55,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(bantuanIntent);
                 break;
         }
+
         }
+    @Override
+    public void onBackPressed(){
+        new AlertDialog.Builder(this)
+                .setMessage("Yakin keluar aplikasi?")
+                .setPositiveButton("YA", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                       finish();
+                    }
+                })
+                .setNegativeButton("TIDAK", null)
+                .setCancelable(false)
+                .show();
+    }
+
     }
 
