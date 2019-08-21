@@ -59,18 +59,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     @Override
     public void onBackPressed(){
-        new AlertDialog.Builder(this)
-                .setMessage("Yakin keluar aplikasi?")
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(false);
+                builder.setMessage("Yakin keluar aplikasi?")
                 .setPositiveButton("YA", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                        finish();
+                       System.exit(0);
                     }
-                })
-                .setNegativeButton("TIDAK", null)
-                .setCancelable(false)
-                .show();
+                });
+        builder.setNegativeButton("TIDAK", new DialogInterface.OnClickListener() {
+        @Override
+        public void onClick(DialogInterface dialog, int which) {
+            //if user select "No", just cancel this dialog and continue with app
+            dialog.cancel();
+        }
+    });
+    AlertDialog alert = builder.create();
+        alert.show();
+}
     }
 
-    }
+
 

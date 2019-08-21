@@ -1,55 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
     android:padding="16dp"
-   android:gravity="center_vertical"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backjenis"
+    android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <LinearLayout
-        android:layout_marginTop="150dp"
-        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" Menu "
+        android:fontFamily="monospace"
+        android:textColor="#fff"
+        android:textSize="52sp"
+        android:textStyle="bold"/>
+
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btn_materi"
+        android:text="Materi"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="@color/fbutton_color_orange"/>
 
-        <Button
-            android:id="@+id/btn_materi"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:background="@drawable/ic_five"/>
-
-        <Button
-            android:id="@+id/btn_kuis"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginLeft="15dp"
-            android:background="@drawable/ic_four" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="50dp"
-        android:orientation="horizontal"
+    <Button
+        android:id="@+id/btn_kuis"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Kuis"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="@color/fbutton_color_carrot"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="TENTANG"
+        android:id="@+id/btn_tentang"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="@color/fbutton_color_pumpkin"/>
 
         <Button
-            android:id="@+id/btn_tentang"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:background="@drawable/ic_one" />
-
-        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Bantuan"
             android:id="@+id/btn_bantuan"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginLeft="15dp"
-            android:background="@drawable/ic_three" />
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="@color/fbutton_color_pomegranate"/>
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

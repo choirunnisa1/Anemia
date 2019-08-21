@@ -5,72 +5,147 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backjenis"
-    android:padding="@dimen/activity_margin"
     android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
     tools:context=".Materi.KomplikasiActivity">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-    <TextView
-        android:id="@+id/judulKomplikasi"
-        android:background="@drawable/side_two"
-        android:layout_marginTop="20dp"
-        android:padding="15dp"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textColor="@color/White"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="KOMPLIKASI ANEMIA"/>
 
-    <com.codesgood.views.JustifiedTextView
-        android:layout_marginBottom="10dp"
-        android:id="@+id/subKomplikasi1"
-        android:fontFamily="monospace"
-        android:text="•	Kelelahan berat. Tanpa penanganan yang baik, anemia dapat menimbulkan kelelahan berat pada penderitanya sehingga mengganggu aktivitas sehari-hari."
-        android:layout_marginTop="25dp"
-        android:textSize="16sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/judulKomplikasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/side_two"
+                android:padding="15dp"
+                android:text="KOMPLIKASI ANEMIA"
+                android:textColor="@color/White"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-    <com.codesgood.views.JustifiedTextView
-        android:layout_marginBottom="10dp"
-        android:id="@+id/subKomplikasi2"
-        android:text="•	Rentan terkena infeksi. Kekurangan zat besi yang menyebabkan anemia dapat berpengaruh pada kemampuan sistem imun dalam memerangi berbagai patogen, sehingga penderita anemia lebih rentan terkena penyakit infeksi."
-        android:fontFamily="monospace"
-        android:textSize="16sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-            <com.codesgood.views.JustifiedTextView
-                android:id="@+id/subKomplikasi3"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="monospace"
-                android:text="•	Komplikasi dan gangguan kehamilan. Wanita hamil yang kekurangan asam folat berisiko mengalami gangguan kehamilan dan perkembangan janin. Selain itu, anemia juga dapat menyebabkan sang ibu mengalami depresi pasca kelahiran melahirkan dan gangguan pada bayi yang dilahirkan, seperti:\na.	Kelahiran prematur sebelum minggu 37.\nb. Berat badan di bawah normal.\nc. Masalah pada kandungan zat besi dalam darah.\nd.	Hasil tes kemampuan mental yang kurang"
-                android:textSize="16sp" />
-    <com.codesgood.views.JustifiedTextView
-        android:layout_marginBottom="10dp"
-        android:id="@+id/subKomplikasi4"
-        android:text="•	Gangguan jantung. Anemia dapat menyebabkan detak jantung menjadi tidak beraturan (aritmia) akibat harus memompa darah lebih keras untuk mengompensasi kekurangan oksigen dalam darah. Kondisi tersebut dapat menyebabkan pembesaran jantung atau gagal jantung."
-        android:fontFamily="monospace"
-        android:textSize="16sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-        <com.codesgood.views.JustifiedTextView
-            android:layout_marginBottom="10dp"
-            android:id="@+id/subKomplikasi5"
-            android:text="•	Kematian. Beberapa anemia yang bersifat bawaan, seperti anemia sel sabit, bisa menjadi serius dan mengancam hidup penderitanya. Kehilangan darah dengan tanpa penanganan yang baik dapat menyebabkan anemia berat dan kematian"
-            android:fontFamily="monospace"
-            android:textSize="16sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="monospace"
+                    android:text="-"
+                    android:textSize="14sp" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="monospace"
+                    android:text="Kelelahan berat. Tanpa penanganan yang baik, anemia dapat menimbulkan kelelahan berat pada penderitanya sehingga mengganggu aktivitas sehari-hari."
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="monospace"
+                    android:text="-"
+                    android:textSize="14sp" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="monospace"
+                    android:text="Rentan terkena infeksi. Kekurangan zat besi yang menyebabkan anemia dapat berpengaruh pada kemampuan sistem imun dalam memerangi berbagai patogen, sehingga penderita anemia lebih rentan terkena penyakit infeksi."
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="monospace"
+                    android:text="-"
+                    android:textSize="14sp" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="monospace"
+                    android:text="Komplikasi dan gangguan kehamilan. Wanita hamil yang kekurangan asam folat berisiko mengalami gangguan kehamilan dan perkembangan janin. Selain itu, anemia juga dapat menyebabkan sang ibu mengalami depresi pasca kelahiran melahirkan dan gangguan pada bayi yang dilahirkan, seperti:\na. Kelahiran prematur sebelum minggu 37.\nb. Berat badan di bawah normal.\nc. Masalah pada kandungan zat besi dalam darah.\nd.	Hasil tes kemampuan mental yang kurang"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="monospace"
+                    android:text="-"
+                    android:textSize="14sp" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="monospace"
+                    android:text="Kematian. Beberapa anemia yang bersifat bawaan, seperti anemia sel sabit, bisa menjadi serius dan mengancam hidup penderitanya. Kehilangan darah dengan tanpa penanganan yang baik dapat menyebabkan anemia berat dan kematian"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="monospace"
+                    android:text="-"
+                    android:textSize="14sp" />
+
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="monospace"
+                    android:text="Gangguan jantung. Anemia dapat menyebabkan detak jantung menjadi tidak beraturan (aritmia) akibat harus memompa darah lebih keras untuk mengompensasi kekurangan oksigen dalam darah. Kondisi tersebut dapat menyebabkan pembesaran jantung atau gagal jantung."
+                    android:textSize="14sp" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.anemia;
+package com.example.anemia.Adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.example.anemia.R;
 
 public class JenisAdapter extends PagerAdapter {
 

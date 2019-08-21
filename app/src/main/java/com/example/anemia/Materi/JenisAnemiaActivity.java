@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.anemia.JenisAdapter;
+import com.example.anemia.Adapter.JenisAdapter;
 import com.example.anemia.Menu.MateriActivity;
 import com.example.anemia.R;
 

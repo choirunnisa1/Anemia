@@ -6,40 +6,182 @@
     android:layout_height="match_parent"
     android:background="@drawable/backjenis"
     android:orientation="vertical"
-    android:padding="@dimen/activity_margin"
     tools:context=".Materi.PemeriksaanDiagActivity">
 
     <TextView
+        android:layout_margin="10dp"
+        android:fontFamily="monospace"
         android:id="@+id/judulDiagnosa"
-        android:background="@drawable/side_two"
-        android:layout_marginTop="20dp"
-        android:padding="15dp"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:textColor="@color/White"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="DIAGNOSA PEMERIKSAAN \nANEMIA"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/activity_margin"
+        android:layout_marginLeft="@dimen/activity_margin"
+        android:background="@drawable/side_two"
+        android:padding="15dp"
+        android:text="DIAGNOSA PEMERIKSAAN \nANEMIA"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="28sp"
+        android:textStyle="bold" />
 
-    <com.codesgood.views.JustifiedTextView
-        android:padding="@dimen/activity_margin"
-        android:id="@+id/subAnemia1"
-        android:text="@string/anemia1"
-        android:fontFamily="monospace"
-        android:layout_marginTop="25dp"
-        android:textSize="16sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
-    <com.codesgood.views.JustifiedTextView
-        android:padding="@dimen/activity_margin"
-        android:id="@+id/subAnemia2"
-        android:text="@string/anemia2"
-        android:fontFamily="monospace"
-        android:textSize="16sp"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.codesgood.views.JustifiedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="@dimen/activity_margin"
+                android:paddingLeft="@dimen/activity_margin"
+                android:paddingRight="@dimen/activity_margin"
+                android:text="Pemeriksaan laboratorium merupakan penunjang diagnostik pokok dalam diagnosis anemia. Pemeriksaan ini terdiri dari :"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/diag1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_diag1"
+                    style="@style/subtitle"
+                    android:background="@drawable/side_two"
+                    android:drawableLeft="@drawable/atas"
+                    android:fontFamily="monospace"
+                    android:text=" - Pemeriksaan penyaring  "
+                    android:textSize="14sp" />
+
+                <LinearLayout style="@style/subIsi">
+
+                    <com.codesgood.views.JustifiedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="Pemeriksaan penyaring untuk kasus anemia terdiri dari pengukuran kadar hemoglobin, indeks eritrosit dan hapusan darah tepi. Dari ini dapat dipastikan adanya anemia serta jenis morfologik anemia tersebut, yang sangat berguna untuk pengarahan diagnosis lebih lanjut"
+                        android:textSize="14sp">
+                    </com.codesgood.views.JustifiedTextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/diag2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_diag2"
+                    style="@style/subtitle"
+                    android:background="@drawable/side_two"
+                    android:drawableLeft="@drawable/atas"
+                    android:fontFamily="monospace"
+                    android:text=" - Pemeriksaan darah seri anemia "
+                    android:textSize="14sp" />
+
+                <LinearLayout style="@style/subIsi">
+
+                    <com.codesgood.views.JustifiedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="Pemeriksaan darah seri anemia meliputi hitung leukosit, trombosit, hitung retikulosit dan laju endap darah. Sekarang sudah banyak dipakai automatic hematology analyzer yang dapat memberikan presisi hasil yang lebih baik."
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/diag3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_diag3"
+                    style="@style/subtitle"
+                    android:background="@drawable/side_two"
+                    android:drawableLeft="@drawable/atas"
+                    android:fontFamily="monospace"
+                    android:text=" - Pemeriksaan sumsum tulang "
+                    android:textSize="14sp" />
+
+                <LinearLayout style="@style/subIsi">
+
+                    <com.codesgood.views.JustifiedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="Pemeriksaan sumsum tulang memberikan informasi yang sangat berharga mengenai keadaan sistem hematopoesis. Pemeriksaan ini dibutuhkan untuk diagnosis definitif pada beberapa jenis anemia. Pemeriksaan sumsum tulang mutlak diperlukan untuk diagnosis anemia aplastik, anemia megaloblastik, serta pada kelainan hematologik yang dapat mensupresi sistem eritroid."
+                        android:textSize="14sp">
+                    </com.codesgood.views.JustifiedTextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/diag4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_diag4"
+                    style="@style/subtitle"
+                    android:background="@drawable/side_two"
+                    android:drawableLeft="@drawable/atas"
+                    android:fontFamily="monospace"
+                    android:text=" - Pemeriksaan khusus  "
+                    android:textSize="14sp" />
+
+                <LinearLayout style="@style/subIsi">
+
+                    <com.codesgood.views.JustifiedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="Pemeriksaan ini hanya dikerjakan atas indikasi khusus, misalnya pada: "
+                        android:textSize="14sp">
+                    </com.codesgood.views.JustifiedTextView>
+                    <com.codesgood.views.JustifiedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="a. Anemia defisiensi besi : serum iron. TIBC (total iron binding capacity), saturasi transferin, protoporfirin eritrosit, feritin serum, reseptor transferin dan pengecatan besi pada sumsum tulang (Perl’s stain)."
+                        android:textSize="14sp">
+                    </com.codesgood.views.JustifiedTextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <com.codesgood.views.JustifiedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="b. Anemia megaloblastik : folat serum, vitamin B12 serum, tes supresi deoksiuridin dan tes Schiling."
+                        android:textSize="14sp">
+                    </com.codesgood.views.JustifiedTextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <com.codesgood.views.JustifiedTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="monospace"
+                        android:text="c. Anemia hemolitik : bilirubin serum, tes Coomb, elektroforesis hemoglobin dan lain-lain."
+                        android:textSize="14sp">
+                    </com.codesgood.views.JustifiedTextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

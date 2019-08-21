@@ -13,10 +13,11 @@ import com.example.anemia.Materi.JenisAnemiaActivity;
 import com.example.anemia.Materi.KomplikasiActivity;
 import com.example.anemia.Materi.PemeriksaanDiagActivity;
 import com.example.anemia.Materi.PengobatanActivity;
+import com.example.anemia.Materi.PenyebabActivity;
 import com.example.anemia.R;
 
 public class MateriActivity extends AppCompatActivity implements View.OnClickListener {
-    Button btn_anemia,btn_jenis,btn_komplikasi,btn_gejala,btn_pengobatan,btn_pemeriksaan;
+    Button btn_anemia,btn_jenis,btn_komplikasi,btn_gejala,btn_pengobatan,btn_pemeriksaan, btn_penyebab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,9 @@ public class MateriActivity extends AppCompatActivity implements View.OnClickLis
 
         btn_jenis = findViewById(R.id.klasifikasi);
         btn_jenis.setOnClickListener(this);
+
+        btn_penyebab = findViewById(R.id.penyebab);
+        btn_penyebab.setOnClickListener(this);
 
         btn_komplikasi = findViewById(R.id.komplikasi);
         btn_komplikasi.setOnClickListener(this);
@@ -57,6 +61,10 @@ public class MateriActivity extends AppCompatActivity implements View.OnClickLis
                 Intent klasifikasiIntent = new Intent(MateriActivity.this, JenisAnemiaActivity.class);
                 startActivity(klasifikasiIntent);
                 break;
+            case R.id.penyebab:
+                Intent penyebabIntent = new Intent(MateriActivity.this, PenyebabActivity.class);
+                startActivity(penyebabIntent);
+                break;
             case R.id.komplikasi:
                 Intent komplikasiIntent = new Intent(MateriActivity.this, KomplikasiActivity.class);
                 startActivity(komplikasiIntent);
@@ -74,5 +82,7 @@ public class MateriActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }}

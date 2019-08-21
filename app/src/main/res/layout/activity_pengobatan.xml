@@ -10,9 +10,11 @@
     tools:context=".Materi.PengobatanActivity">
 
     <TextView
+        android:textAlignment="center"
         android:id="@+id/pengobatanAnemia"
         android:background="@drawable/side_two"
         android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
         android:padding="15dp"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -23,22 +25,101 @@
         android:text="PENGOBATAN ANEMIA"/>
 
     <com.codesgood.views.JustifiedTextView
-        android:padding="@dimen/activity_margin"
-        android:id="@+id/subAnemia1"
-        android:text="@string/anemia1"
-        android:fontFamily="monospace"
-        android:layout_marginTop="25dp"
-        android:textSize="16sp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_marginTop="15dp"
+        android:fontFamily="monospace"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:text="Pengobatan harus diarahkan pada penyebab anemia, dan mungkin termasuk"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
 
-    <com.codesgood.views.JustifiedTextView
-        android:padding="@dimen/activity_margin"
-        android:id="@+id/subAnemia2"
-        android:text="@string/anemia2"
-        android:fontFamily="monospace"
-        android:textSize="16sp"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:fontFamily="monospace"
+            android:text="-"
+            android:textSize="16sp" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:layout_width="364dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:fontFamily="monospace"
+            android:text="Transfusi Darah"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:fontFamily="monospace"
+            android:text="-"
+            android:textSize="16sp" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:layout_width="364dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:fontFamily="monospace"
+            android:text="Kortikosteroid atau obat lain yang menekan sistem kekebalan tubuh"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:fontFamily="monospace"
+            android:text="-"
+            android:textSize="16sp" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:layout_width="364dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:fontFamily="monospace"
+            android:text="Erythropoietin, obat yang membantu sumsum tulang Anda membuat lebih banyak sel darah"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:fontFamily="monospace"
+            android:text="-"
+            android:textSize="16sp" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:layout_width="364dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:fontFamily="monospace"
+            android:text="Suplemen zat besi, vitamin B12, asam folat, atau vitamin dan mineral lainnya"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
 
 </LinearLayout>
