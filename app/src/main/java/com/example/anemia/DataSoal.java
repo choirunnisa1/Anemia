@@ -10,156 +10,72 @@ import java.util.Random;
 import static java.util.concurrent.ThreadLocalRandom.current;
 
 public class DataSoal {
-    // Jumlah Soal yang ingin ditampilkan
-    int jumlahSoalTampil = 10;
+    private String pertanyaan[]={
+            "Anemia merupakan suatu penyakit yang disebabkan kurangnya...",
+            "Jenis penyakit anemia yang disebabkan oleh kurangnya zat besi yang berperan dalam pembentukkan hemoglobin adalah..",
+            "Berikut merupakan komplikasi yang dialami bayi yang dilahirkan oleh ibu yang mengindap anemia, kecuali",
+            "Gejala anemia dapat digolongkan menjadi berapa jenis?",
+            "Salah satu pengobatan yang dapat dilakukan oleh pengidap anemia adalah",
+            "Berikut makanan yang dianjurkan dikonsumsi oleh penderita anemia, kecuali...",
+            "Yang paling rentan terserang anemia adakah",
+            "Jenis pemeriksaan laboratorium untuk diagnosis anemia yang hanya dikerjakan atas indikasi khusus adalah",
+            "Berikut yang bukan merupakan gejala umum anemia adalah",
+            "Kelelahan, pucat, mudah memar, pendafarahan gusi merupakan gejala dari anemia",
+    };
 
-    static void shuffle(int[] array) {
-        int n = array.length;
-        Random random = new Random();
-        // Loop over array.
-        for (int i = 0; i < array.length; i++) {
-            // Get a random index of the array past the current index.
-            // ... The argument is an exclusive bound.
-            //     It will not go past the array's end.
-            int randomValue = i + random.nextInt(n - i);
-            // Swap the random element with the present element.
-            int randomElement = array[randomValue];
-            array[randomValue] = array[i];
-            array[i] = randomElement;
-        }
-    }
-    //membuat array untuk pertanyaan
-    public String pertanyaan[] = {
-            "5 - 1 =",
-            "7 - 4 =",
-            "9 - 7 =",
-            "6 - 4 =",
-            "9 - 3 =",
+    private String jawaban[]={
+            "Hemoglobin dalam Darah",
+            "Anemia Defisiensi Besi",
+            "Berat badan bayi di atas normal",
+            "3 jenis",
+            "Transfusi Darah",
+            "Jagung",
+            "Wanita produktif(masih mengalami menstruasi)",
+            "Pemeriksaaan Khusus",
+            "Mual",
+            "Aplastik",
+    };
+
+    private String opsi[][]={
+            {"Hemoglobin dalam Darah","Mineral","Kandungan Zat Besi","Tekanan Darah"} ,
+            {"Anemia Hemolitik","Anemia Megaloblastik","Anemia Defisiensi Besi","Anemia Kronis"},
+            {"Kelahiran prematur sebelum minggu ke-37","Hasil Tes Kemampuan Mental yang Kurang","Masalah pada kandungan Zat besi dalam darah","Berat badan bayi di atas normal"},
+            {"4 jenis","3 jenis","5 jenis","2 jenis"},
+            {"Olahraga yang cukup","Suplemen nafsu makan","Transfusi Darah","Berjemur"},
+            {"Daging","Bayam","Kacang-kacangan","Jagung"},
+            {"Anak-anak","Laki-laki dewasa","Wanita produktif(masih mengalami menstruasi)","Semua kalangan"},
+            {"Pemeriksaan spesial","Pemeriksaan sumsum tulang","Pemeriksaan darah seri anemia","Pemeriksaan Khusus"},
+            {"Letih","Lesu","Mual","Lunglai"},
+            {"Bulan Sabit","Hemolitik","Megaloblastik","Aplastik"},
+
 
     };
 
-    //----------------- Algoritma Fisher Yates
-    public ArrayList<Integer> fisherYates(){
-        // Menampilkan urutan awal soal dalam Log Warning
-        Log.w("FisherYates", "indexAwalSoal"+" = "+getIndexArrayString(pertanyaan));
-
-        // Menampilkan jumlah soal yang ditampilkan
-        Log.w("jumlahSoalDitampilkan", String.valueOf(jumlahSoalTampil));
-        ArrayList<Integer> hasil = new ArrayList<>();
-
-        ArrayList<Integer> awal = new ArrayList<>();
-
-        for (int i = 0; i < pertanyaan.length ; i++) {
-            awal.add(i);
-        }
-
-        // Generate Random Index
-        //for (int i = 0; i < pertanyaan.length ; i++) {
-        for (int i = 0; i < jumlahSoalTampil ; i++) {
-
-            //　Mengacak index yang digunakan (Mengambil nilai acak)
-            Integer indexNomor = new Random().nextInt(awal.size());
-
-            // Menambahkan hasil acakan pada array baru
-            hasil.add(awal.get(indexNomor));
-
-            // Menampilkan urutan soal setelah diacak dalam Log Warning
-            Log.w("FisherYates","indexSoalAcak Ke-"+String.valueOf(i+1)+ " = "+getIndexArrayListInteger(hasil));
-
-            awal.remove(indexNomor);
-        }
-
-        return hasil;
+    public  String getSoal(int a){
+        String soal = pertanyaan[a];
+        return  soal;
     }
 
-    // Implementing Fisher–Yates shuffle
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    static void shuffleArray(int[] ar)
-    {
-        // If running on Java 6 or older, use `new Random()` on RHS here
-        Random rnd = current();
-        for (int i = ar.length - 1; i > 0; i--)
-        {
-            int index = rnd.nextInt(i + 1);
-            // Simple swap
-            int a = ar[index];
-            ar[index] = ar[i];
-            ar[i] = a;
-        }
+    public String getOpsi1(int a){
+        String pila = opsi[a][0];
+        return pila;
     }
-    //membuat array untuk pilihan jawaban
-    private String pilihanJawaban[][] = {
-            {"4","7","2"},
-            {"2","3","4"},
-            {"1","2","3"},
-            {"2","4","6"},
-            {"1","5","6"},
-    };
-
-    //membuat array untuk jawaban benar
-    private String jawabanBenar[] = {
-            "4",
-            "3",
-            "2",
-            "2",
-            "6",
-    };
-
-    //membuat getter untuk mengambil pertanyaan
-    public String getPertanyaan(int x){
-        String soal = pertanyaan[x];
-        return soal;
+    public String getOpsi2(int a){
+        String pilb = opsi[a][1];
+        return pilb;
+    }
+    public String getOpsi3(int a){
+        String pilc = opsi[a][2];
+        return pilc;
     }
 
-    //membuat getter untuk mengambil pilihan jawaban 1
-    public String getPilihanJawaban1(int x){
-        String jawaban1 = pilihanJawaban[x][0];
-        return jawaban1;
+    public String getOpsi4(int a){
+        String pilc = opsi[a][3];
+        return pilc;
     }
 
-    //membuat getter untuk mengambil pilihan jawaban 2
-    public String getPilihanJawaban2(int x){
-        String jawaban2 = pilihanJawaban[x][1];
-        return jawaban2;
+    public String getJawaban(int a){
+        String jwbn = jawaban[a];
+        return jwbn;
     }
-
-    //membuat getter untuk mengambil pilihan jawaban 3
-    public String getPilihanJawaban3(int x){
-        String jawaban3 = pilihanJawaban[x][2];
-        return jawaban3;
-    }
-
-    //membuat getter untuk mengambil jawaban benar
-    public String getJawabanBenar(int x){
-        String jawaban = jawabanBenar[x];
-        return jawaban;
-    }
-
-    public String[] getPertanyaanAwal(){
-        return pertanyaan;
-    }
-
-    public String getIndexArrayString(String[] array){
-        int nArray = array.length;
-        String indexArray = "";
-        for (int i = 0; i < nArray; i++) {
-            indexArray = indexArray + String.valueOf(i);
-            if (i < nArray-1)
-                indexArray = indexArray + ", ";
-        }
-        return indexArray;
-    }
-
-    public String getIndexArrayListInteger(ArrayList<Integer> arrayList){
-        int nArray = arrayList.size();
-        String indexArray = "";
-        for (int i = 0; i < nArray; i++) {
-            indexArray = indexArray + String.valueOf(arrayList.get(i));
-            if (i < nArray-1)
-                indexArray = indexArray + ", ";
-        }
-        return indexArray;
-    }
-
-
 }

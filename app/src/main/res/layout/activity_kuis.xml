@@ -9,12 +9,6 @@
     android:background="@drawable/backjenis"
     tools:context=".Menu.KuisActivity">
 
-    <TextClock
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="viewEnd"
-        android:text="00.35'">
-    </TextClock>
     <TextView
         android:background="#2AFFFFFF"
         android:id="@+id/soal"
