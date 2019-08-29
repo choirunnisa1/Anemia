@@ -21,6 +21,17 @@ public class DataSoal {
             "Jenis pemeriksaan laboratorium untuk diagnosis anemia yang hanya dikerjakan atas indikasi khusus adalah",
             "Berikut yang bukan merupakan gejala umum anemia adalah",
             "Kelelahan, pucat, mudah memar, pendafarahan gusi merupakan gejala dari anemia",
+            "Glossitis merupakan gejala dari jenis anemia...",
+            "Berikut merupakan komplikasi dari anemia, kecuali",
+            "Selain zat besi dan asam folat, zat gizi lain yang berperan penting dalam pembuatan hemoglobin adalah",
+            "Secara garis besar patogenesis anemia penyakit kronis dititikberatkan pada 3 abnormalitas utama, salah satunya merupakan ketahanan hidup eritrosit yang memendek akibat terjadinya lisis......lebih dini",
+            "Di negara barat kadar hemoglobin paling rendah untuk laki-laki adalah",
+            "Jenis pemeriksaan anemia yang dibutuhkan untuk diagnosis definitif pada beberapa jenis anemia adalah",
+            "Bentuk anemia derajat ringan sampai sedang yang terjadi akibat infeksi kronis, peradangan trauma atau penyakit neoplastik yang telah berlangsung 1–2 bulan dan tidak disertai penyakit hati, ginjal dan endokrin adalah...",
+            "Salah satu pemeriksaan yang hanya dikerjakan atas indikasi khusus pada jenis anemia megaloblastik adalah...",
+            "Fungsi dari hemoglobin adalah...",
+            "Berikut merupakan jenis makanan yang dapat membantu mencegah anemia, kecuali...",
+            
     };
 
     private String jawaban[]={
@@ -30,24 +41,43 @@ public class DataSoal {
             "3 jenis",
             "Transfusi Darah",
             "Jagung",
-            "Wanita produktif(masih mengalami menstruasi)",
+            "Remaja Putri",
             "Pemeriksaaan Khusus",
             "Mual",
             "Aplastik",
+            "Megaloblastik",
+            "Gangguan Pernapasan",
+            "Vitamin B12",
+            "Eritrosit",
+            "14g/l",
+            "Pemeriksaan sumsum tulang",
+            "Anemia Kronis",
+            "Tes supresi deoksiuridin",
+            "Pengangkut oksigen dari paru-paru ke seluruh tubuh",
+            "Makanan yang kaya akan zat kalsium",
     };
 
     private String opsi[][]={
-            {"Hemoglobin dalam Darah","Mineral","Kandungan Zat Besi","Tekanan Darah"} ,
+            {"Hemoglobin dalam Darah","Mineral","Protein","Tekanan Darah"} ,
             {"Anemia Hemolitik","Anemia Megaloblastik","Anemia Defisiensi Besi","Anemia Kronis"},
             {"Kelahiran prematur sebelum minggu ke-37","Hasil Tes Kemampuan Mental yang Kurang","Masalah pada kandungan Zat besi dalam darah","Berat badan bayi di atas normal"},
             {"4 jenis","3 jenis","5 jenis","2 jenis"},
             {"Olahraga yang cukup","Suplemen nafsu makan","Transfusi Darah","Berjemur"},
             {"Daging","Bayam","Kacang-kacangan","Jagung"},
-            {"Anak-anak","Laki-laki dewasa","Wanita produktif(masih mengalami menstruasi)","Semua kalangan"},
+            {"Anak-anak","Laki-laki dewasa","Remaja Putri","Semua kalangan"},
             {"Pemeriksaan spesial","Pemeriksaan sumsum tulang","Pemeriksaan darah seri anemia","Pemeriksaan Khusus"},
             {"Letih","Lesu","Mual","Lunglai"},
             {"Bulan Sabit","Hemolitik","Megaloblastik","Aplastik"},
-
+            {"Megaloblastik","Defisiensi Besi","Kronis","Kehamilan"},
+            {"Kematian","Gangguan Pernapasan","Kelelahan Berat","Gangguan Jantung"},
+            {"Vitamin D","Fosfor","Vitamin B12","Kalsium"},
+            {"Trombosit","Leukosit","Aplastik","Eritrosit"},
+            {"14g/l","13g/l","12g/l","11g/l"},
+            {"Pemeriksaan darah seri","Pemeriksaan sumsum tulang","Pemeriksaan khusus","Pemeriksaan penyaring"},
+            {"Anemia Aplastik","Anemia Hemolitik","Anemia Kronis","Anemia Megaloblastik"},
+            {"Tes supresi deoksiuridin","Bilirubin serum","Elektroforesis hemoglobin","Pengecatan besi pada sumsum tulang"},
+            {"Memperlancar peredaran darah","Pengangkut oksigen dari paru-paru ke seluruh tubuh","Pengangkut karbondioksida dari paru-paru ke seluruh tubuh","Pengangkut electron di dalam proses pembentukan energi di dalam sel"},
+            {"Makanan yang kaya akan zat kalsium","Makanan yang kaya akan zat besi","Makanan yang kaya akan asam folat","Makanan yang kaya akan vitamin B12"},
 
     };
 

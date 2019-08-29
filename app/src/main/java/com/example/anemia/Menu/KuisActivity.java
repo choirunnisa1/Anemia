@@ -30,13 +30,16 @@ public class KuisActivity extends AppCompatActivity {
 //    public int Acak;
     DataSoal dSoal = new DataSoal();
     double skor, benar;
-    int ambil;
-    int z=0;
     RadioGroup grupoption;
     RadioButton optiona, optionb, optionc,optiond;
-    TextView soal;
+    TextView tv_soal;
     Button buttonnext;
     String jawaban;
+    int n;
+    public static int[] Xn;
+    public int Xn0;
+    public int i,a,c,m;
+    public int nilaiAcak;
 
 
     @Override
@@ -45,13 +48,13 @@ public class KuisActivity extends AppCompatActivity {
         setContentView(R.layout.activity_kuis);
 
         grupoption = findViewById(R.id.rgop);
-        soal = findViewById(R.id.soal);
+        tv_soal = findViewById(R.id.soal);
         optiona = findViewById(R.id.optiona);
         optionb = findViewById(R.id.optionb);
         optionc = findViewById(R.id.optionc);
         optiond = findViewById(R.id.optiond);
-        buttonnext = findViewById(R.id.next);
-
+        buttonnext = findViewById(R.id.submit);
+        lcm();
         update();
 
         buttonnext.setOnClickListener(new View.OnClickListener() {
@@ -62,27 +65,71 @@ public class KuisActivity extends AppCompatActivity {
         });
     }
 
-    public void update(){
-        grupoption.clearCheck();
+    public void lcm() {
+        n = 20;
+        a = 11;
+        m = 10;
+        c = 5;
+        Xn = new int[n];
 
-        if (z == 10){
-            skor = (benar/10)*100;
-            String skorx = String.valueOf(skor)+"%";
+        Random b = new Random();
+        Xn0 = b.nextInt(m - 0) + 0;
+
+        for (i = 1; i <= 11; i++) {
+
+            if (i == 1) {
+                Xn[i] = (a * Xn0 + c) % m;
+            } else if (i > 1 && i <= 10) {
+                Xn[i] = (a * Xn[i - 1] + c) % m;
+            } else {
+                Log.d("Algoritma LCM", "LCM Selesai");
+                break;
+            }
+
+            nilaiAcak = Xn[i];
+
+            Log.d("Algoritma LCM 2","Xn[" + i + "] = " + nilaiAcak);
+        }
+    }
+
+    public void update() {
+        grupoption.clearCheck();
+        if (i <=10) {
+            tv_soal.setText(dSoal.getSoal(nilaiAcak));
+            optiona.setText(dSoal.getOpsi1(nilaiAcak));
+            optionb.setText(dSoal.getOpsi2(nilaiAcak));
+            optionc.setText(dSoal.getOpsi3(nilaiAcak));
+            optiond.setText(dSoal.getOpsi4(nilaiAcak));
+            jawaban = dSoal.getJawaban(nilaiAcak);
+
+    }else
+        {
+            skor = (benar*10);
+            String skorx = String.valueOf(skor);
             Intent i = new Intent(KuisActivity.this, SkorActivity.class);
             i.putExtra("skorakhir",skorx);
             startActivity(i);
-        }else{
-            Random random = new Random();
-            ambil = random.nextInt(10);
-            soal.setText(dSoal.getSoal(ambil));
-            optiona.setText(dSoal.getOpsi1(ambil));
-            optionb.setText(dSoal.getOpsi2(ambil));
-            optionc.setText(dSoal.getOpsi3(ambil));
-            optiond.setText(dSoal.getOpsi4(ambil));
-            jawaban = dSoal.getJawaban(ambil);
         }
-        z++;
+        i++;
     }
+//        if (z == 10){
+//            skor = (benar*10);
+//            String skorx = String.valueOf(skor);
+//            Intent i = new Intent(KuisActivity.this, SkorActivity.class);
+//            i.putExtra("skorakhir",skorx);
+//            startActivity(i);
+//        }else{
+//            Random random = new Random();
+//            ambil = random.nextInt(10);
+//            tv_soal.setText(dSoal.getSoal(ambil));
+//            optiona.setText(dSoal.getOpsi1(ambil));
+//            optionb.setText(dSoal.getOpsi2(ambil));
+//            optionc.setText(dSoal.getOpsi3(ambil));
+//            optiond.setText(dSoal.getOpsi4(ambil));
+//            jawaban = dSoal.getJawaban(ambil);
+//        }
+//        z++;
+//    }
 
     public void cekJawaban(){
         if (optiona.isChecked()){
@@ -130,8 +177,6 @@ public class KuisActivity extends AppCompatActivity {
 
     public void salah(){
         benar=benar+0;
-        Toast.makeText(getApplicationContext(), "Anda benar", Toast.LENGTH_SHORT).show();
-        update();
         }
 
 

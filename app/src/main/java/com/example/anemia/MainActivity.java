@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(moveIntent);
             break;
             case R.id.btn_tentang:
-                Intent tentangIntent = new Intent(MainActivity.this, SkorActivity.class);
+                Intent tentangIntent = new Intent(MainActivity.this, TentangActivity.class);
                 startActivity(tentangIntent);
                 break;
             case R.id.btn_bantuan:

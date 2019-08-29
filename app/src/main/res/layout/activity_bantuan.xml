@@ -6,8 +6,31 @@
     android:background="@drawable/backjenis"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
     tools:context=".Menu.BantuanActivity">
 
+    <TextView
+        android:id="@+id/bantuan"
+        android:background="@drawable/side_two"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="BANTUAN"/>
+
+    <com.codesgood.views.JustifiedTextView
+        android:layout_marginTop="20dp"
+        android:textColor="@color/White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:fontFamily="monospace"
+        android:text="Mobile learning anemia ini berisi materi dan kuis mengenai anemia.Adapun beberapa fungsi tombol yang perlu di perhatikan yaitu :"
+        android:textSize="14sp" />
 
 
 </LinearLayout>

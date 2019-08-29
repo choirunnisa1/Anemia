@@ -66,6 +66,7 @@
                 <LinearLayout style="@style/subIsi">
 
                     <com.codesgood.views.JustifiedTextView
+                        android:textColor="@color/White"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="monospace"
@@ -93,6 +94,7 @@
                 <LinearLayout style="@style/subIsi">
 
                     <com.codesgood.views.JustifiedTextView
+                        android:textColor="@color/White"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="monospace"
@@ -119,6 +121,7 @@
                 <LinearLayout style="@style/subIsi">
 
                     <com.codesgood.views.JustifiedTextView
+                        android:textColor="@color/White"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="monospace"
@@ -145,6 +148,7 @@
                 <LinearLayout style="@style/subIsi">
 
                     <com.codesgood.views.JustifiedTextView
+                        android:textColor="@color/White"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="monospace"
@@ -152,6 +156,7 @@
                         android:textSize="14sp">
                     </com.codesgood.views.JustifiedTextView>
                     <com.codesgood.views.JustifiedTextView
+                        android:textColor="@color/White"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="monospace"
@@ -162,6 +167,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
+                        android:textColor="@color/White"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="monospace"
@@ -172,6 +178,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
+                        android:textColor="@color/White"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="monospace"

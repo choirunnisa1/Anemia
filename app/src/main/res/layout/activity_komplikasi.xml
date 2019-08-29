@@ -9,28 +9,27 @@
     android:padding="@dimen/activity_margin"
     tools:context=".Materi.KomplikasiActivity">
 
+    <TextView
+        android:id="@+id/komplikasiAnemia"
+        android:background="@drawable/side_two"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="PENYEBAB ANEMIA"/>
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/judulKomplikasi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/side_two"
-                android:padding="15dp"
-                android:text="KOMPLIKASI ANEMIA"
-                android:textColor="@color/White"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -46,6 +45,7 @@
                     android:textSize="14sp" />
 
                 <com.codesgood.views.JustifiedTextView
+                    android:textColor="@color/White"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
@@ -69,6 +69,7 @@
                     android:textSize="14sp" />
 
                 <com.codesgood.views.JustifiedTextView
+                    android:textColor="@color/White"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
@@ -92,6 +93,7 @@
                     android:textSize="14sp" />
 
                 <com.codesgood.views.JustifiedTextView
+                    android:textColor="@color/White"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
@@ -115,6 +117,7 @@
                     android:textSize="14sp" />
 
                 <com.codesgood.views.JustifiedTextView
+                    android:textColor="@color/White"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
@@ -138,6 +141,7 @@
                     android:textSize="14sp" />
 
                 <com.codesgood.views.JustifiedTextView
+                    android:textColor="@color/White"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
@@ -145,7 +149,7 @@
                     android:text="Gangguan jantung. Anemia dapat menyebabkan detak jantung menjadi tidak beraturan (aritmia) akibat harus memompa darah lebih keras untuk mengompensasi kekurangan oksigen dalam darah. Kondisi tersebut dapat menyebabkan pembesaran jantung atau gagal jantung."
                     android:textSize="14sp" />
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>

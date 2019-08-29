@@ -53,6 +53,7 @@
                 <LinearLayout
                     style="@style/subIsi">
                     <com.codesgood.views.JustifiedTextView
+                        android:textColor="@color/White"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
@@ -78,13 +79,16 @@
                     <com.codesgood.views.JustifiedTextView
                         android:fontFamily="monospace"
                         android:textSize="14sp"
+                        android:textColor="@color/White"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="a. Anemia defisiensi besi: warna biru hingga putih pada mata, kuku rapuh, penurunan nafsu makan, kelelahan, sakit kepala, mudah marah, warna kulit pucat, sesak nafas, sakit pada lidah, nafsu makan yang tidak biasa yaitu suka pilih-pilih makanan (pica), kelemahan"/>
                     <TextView
+                        android:textColor="@color/White"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
+                        android:textColor="@color/White"
                         android:fontFamily="monospace"
                         android:textSize="14sp"
                         android:layout_width="match_parent"
@@ -94,6 +98,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
+                        android:textColor="@color/White"
                         android:fontFamily="monospace"
                         android:textSize="14sp"
                         android:layout_width="match_parent"
@@ -103,6 +108,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
+                        android:textColor="@color/White"
                         android:textSize="14sp"
                         android:fontFamily="monospace"
                         android:layout_width="match_parent"
@@ -126,6 +132,7 @@
                 <LinearLayout
                     style="@style/subIsi">
                     <com.codesgood.views.JustifiedTextView
+                        android:textColor="@color/White"
                         android:textSize="14sp"
                         android:fontFamily="monospace"
                         android:layout_width="match_parent"

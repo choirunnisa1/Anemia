@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Mobila</string>
+    <string name="anemia3">Di negara barat kadar hemoglobin paling rendah untuk laki-laki adalah 14 g/dl dan 12 g/dl pada perempuan dewasa pada permukaan laut. Peneliti lain memberikan angka yang berbeda yaitu 12 g/dl (hematokorit 38%) untuk perempuan dewasa. 11 g/dl (hematokorit 36%) untuk perempuan hamil, dan 13 g/dl untuk laki dewasa. g/dl (gram/100 militer darah)</string>
     <string name="gejala1">Gejala anemia dapat digolongkan menjadi tiga jenis gejala, yaitu :</string>
     <string name="anemia1">Anemia adalah keadaan yang ditandai dengan berkurangnya hemoglobin dalam tubuh. Di mana hemoglobin adalah suatu metaloprotein yaitu protein yang mengandung zat besi di dalam sel darah merah yang berfungsi sebagai pengangkut oksigen dari paru-paru ke seluruh tubuh.</string>
     <string name="anemia2">Anemia menyebabkan berkurangnya jumlah sel darah merah atau jumlah hemoglobin dalam sel darah merah, sehingga darah tidak dapat mengangkut oksigen dalam jumlah sesuai yang diperlukan tubuh. </string>

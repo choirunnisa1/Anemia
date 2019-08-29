@@ -5,30 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center_vertical"
     android:background="@drawable/backjenis"
     android:padding="30dp"
     tools:context=".SkorActivity">
 
-    <CheckBox
+    <TextView
+        android:id="@+id/judulskor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="apa slahk?"/>
-    <CheckBox
+        android:text="Skor kamu adalah :"
+        android:textAlignment="center"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/skornya"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="apa slahk?"/>
-    <CheckBox
+        android:textSize="150dp"
+        android:text="100"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="apa slahk?"/>
-    <CheckBox
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="apa slahk?"/>
-    <CheckBox
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="apa slahk?"/>
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/ulangkuis"
+            android:text="Ulangi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/belajar"
+            android:text="Belajar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/home"
+            android:text="Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
 
 

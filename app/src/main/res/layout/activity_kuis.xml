@@ -30,24 +30,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <RadioButton
+            android:fontFamily="monospace"
             android:id="@+id/optiona"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <RadioButton
+            android:fontFamily="monospace"
             android:id="@+id/optionb"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <RadioButton
+            android:fontFamily="monospace"
             android:id="@+id/optionc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <RadioButton
+            android:fontFamily="monospace"
             android:id="@+id/optiond"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </RadioGroup>
 
     <Button
+        android:id="@+id/submit"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

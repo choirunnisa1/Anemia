@@ -35,6 +35,16 @@
                 android:fontFamily="monospace"
                 android:textSize="15sp"
                 android:text="@string/penyebabutama"/>
+            <TextView
+                android:paddingLeft="16dp"
+                android:paddingRight="@dimen/activity_margin"
+                android:paddingBottom="5dp"
+                android:fontFamily="monospace"
+                android:textSize="15sp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ada 3 penyebab anemia, yaitu"/>
             <LinearLayout
                 android:orientation="vertical"
                 android:id="@+id/penyebab1"
@@ -51,6 +61,7 @@
                 <LinearLayout
                     style="@style/subIsi">
                     <com.codesgood.views.JustifiedTextView
+                        android:textColor="@color/White"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
@@ -61,6 +72,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
                     <com.codesgood.views.JustifiedTextView
+                        android:textColor="@color/White"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
@@ -88,11 +100,13 @@
                         android:textSize="14sp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/White"
                         android:text="- Perdarahan karena kecacingan dan trauma atau luka yang mengakibatkan kadar Hb menurun. "/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
+                        android:textColor="@color/White"
                         android:fontFamily="monospace"
                         android:textSize="14sp"
                         android:layout_width="match_parent"
@@ -116,6 +130,7 @@
                 <LinearLayout
                     style="@style/subIsi">
                     <com.codesgood.views.JustifiedTextView
+                        android:textColor="@color/White"
                         android:textSize="14sp"
                         android:fontFamily="monospace"
                         android:layout_width="match_parent"
@@ -127,6 +142,7 @@
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
                         android:fontFamily="monospace"
+                        android:textColor="@color/White"
                         android:textSize="14sp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
