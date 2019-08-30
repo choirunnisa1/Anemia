@@ -54,7 +54,7 @@ public class KuisActivity extends AppCompatActivity {
         optionc = findViewById(R.id.optionc);
         optiond = findViewById(R.id.optiond);
         buttonnext = findViewById(R.id.submit);
-        lcm();
+
         update();
 
         buttonnext.setOnClickListener(new View.OnClickListener() {
@@ -65,35 +65,10 @@ public class KuisActivity extends AppCompatActivity {
         });
     }
 
-    public void lcm() {
-        n = 20;
-        a = 11;
-        m = 10;
-        c = 5;
-        Xn = new int[n];
-
-        Random b = new Random();
-        Xn0 = b.nextInt(m - 0) + 0;
-
-        for (i = 1; i <= 11; i++) {
-
-            if (i == 1) {
-                Xn[i] = (a * Xn0 + c) % m;
-            } else if (i > 1 && i <= 10) {
-                Xn[i] = (a * Xn[i - 1] + c) % m;
-            } else {
-                Log.d("Algoritma LCM", "LCM Selesai");
-                break;
-            }
-
-            nilaiAcak = Xn[i];
-
-            Log.d("Algoritma LCM 2","Xn[" + i + "] = " + nilaiAcak);
-        }
-    }
 
     public void update() {
         grupoption.clearCheck();
+        lcm();
         if (i <=10) {
             tv_soal.setText(dSoal.getSoal(nilaiAcak));
             optiona.setText(dSoal.getOpsi1(nilaiAcak));
@@ -103,6 +78,7 @@ public class KuisActivity extends AppCompatActivity {
             jawaban = dSoal.getJawaban(nilaiAcak);
 
     }else
+         if   (i > 10)
         {
             skor = (benar*10);
             String skorx = String.valueOf(skor);
@@ -110,7 +86,6 @@ public class KuisActivity extends AppCompatActivity {
             i.putExtra("skorakhir",skorx);
             startActivity(i);
         }
-        i++;
     }
 //        if (z == 10){
 //            skor = (benar*10);
@@ -178,6 +153,33 @@ public class KuisActivity extends AppCompatActivity {
     public void salah(){
         benar=benar+0;
         }
+    public void lcm() {
+        n = 20;
+        a = 11;
+        m = 10;
+        c = 5;
+        Xn = new int[n];
+
+        Random b = new Random();
+        Xn0 = b.nextInt(m - 0) + 0;
+
+        for (i = 1; i <= 11; i++) {
+
+            if (i == 1) {
+                Xn[i] = (a * Xn0 + c) % m;
+            } else if (i > 1 && i <= 10) {
+                Xn[i] = (a * Xn[i - 1] + c) % m;
+            } else {
+                Log.d("Algoritma LCM", "LCM Selesai");
+                break;
+            }
+
+            nilaiAcak = Xn[i];
+
+            Log.d("Algoritma LCM 2","Xn[" + i + "] = " + nilaiAcak);
+        }
+    }
+
 
 
 //    public void AcakKuis(){
