@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -34,6 +35,8 @@ public class PenyebabActivity extends AppCompatActivity {
 
         mtv_penyebab3 = findViewById(R.id.tv_penyebab3);
         mline_penyebab3 = findViewById(R.id.penyebab3);
+
+
 
 
         mtv_penyebab1.setOnClickListener(new View.OnClickListener() {

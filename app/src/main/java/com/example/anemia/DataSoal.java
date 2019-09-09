@@ -10,7 +10,14 @@ import java.util.Random;
 import static java.util.concurrent.ThreadLocalRandom.current;
 
 public class DataSoal {
+    private String id[]={
+            "1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"
+
+    };
     private String pertanyaan[]={
+            "Gejala umum anemia disebut juga..",
+            "Yang menyebabkan penderita anemia rentan terhadap penyakit adalah karena kekurangan....",
+            "Kortikosteroid merupakan salah satu cara untuk mengobati anemia, di mana fungsi obat ini adalah untuk...",
             "Anemia merupakan suatu penyakit yang disebabkan kurangnya...",
             "Jenis penyakit anemia yang disebabkan oleh kurangnya zat besi yang berperan dalam pembentukkan hemoglobin adalah..",
             "Berikut merupakan komplikasi yang dialami bayi yang dilahirkan oleh ibu yang mengindap anemia, kecuali",
@@ -35,6 +42,9 @@ public class DataSoal {
     };
 
     private String jawaban[]={
+            "Zat Besi",
+            "Sindroma anemia",
+            "Menekan sistem kekebalan tubuh",
             "Hemoglobin dalam Darah",
             "Anemia Defisiensi Besi",
             "Berat badan bayi di atas normal",
@@ -58,6 +68,9 @@ public class DataSoal {
     };
 
     private String opsi[][]={
+            {"Darah","Zat Besi","Protein","Oksigen"},
+            {"Sindroma anemia","Iskemia","Glossitis","Hipoferemia"},
+            {"Suplemen zat besi","Menambah kandungan protein","Menekan sistem kekebalan tubuh","Membantu sumsum tulang Anda membuat lebih banyak sel darah"},
             {"Hemoglobin dalam Darah","Mineral","Protein","Tekanan Darah"} ,
             {"Anemia Hemolitik","Anemia Megaloblastik","Anemia Defisiensi Besi","Anemia Kronis"},
             {"Kelahiran prematur sebelum minggu ke-37","Hasil Tes Kemampuan Mental yang Kurang","Masalah pada kandungan Zat besi dalam darah","Berat badan bayi di atas normal"},
@@ -80,6 +93,11 @@ public class DataSoal {
             {"Makanan yang kaya akan zat kalsium","Makanan yang kaya akan zat besi","Makanan yang kaya akan asam folat","Makanan yang kaya akan vitamin B12"},
 
     };
+
+    public String getId(int a) {
+        String no = id[a];
+        return no;
+    }
 
     public  String getSoal(int a){
         String soal = pertanyaan[a];

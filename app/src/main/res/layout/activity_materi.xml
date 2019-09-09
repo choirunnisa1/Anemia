@@ -4,28 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backjenis"
     android:orientation="vertical"
+    android:background="#95837E7E"
     tools:context=".Menu.MateriActivity">
-
-    <TextView
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:textSize="50sp"
-        android:fontFamily="monospace"
-        android:textColor="@color/White"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MATERI"
-        android:textAlignment="center"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/activity_margin"
         android:padding="@dimen/activity_margin">
 
         <LinearLayout
+            android:layout_margin="@dimen/activity_margin"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -33,39 +22,39 @@
             <Button
                 android:id="@+id/anemia"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="80dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/side_two"
+                android:background="@drawable/side_materi"
+                android:textColor="#A81F1F"
                 android:fontFamily="monospace"
                 android:gravity="center"
                 android:text="ANEMIA"
-                android:textColor="#ffff"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/gejala"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="80dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/side_two"
+                android:background="@drawable/side_materi"
+                android:textColor="#A81F1F"
                 android:fontFamily="monospace"
                 android:gravity="center"
                 android:text="Gejala"
-                android:textColor="#ffff"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/penyebab"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="80dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/side_two"
+                android:background="@drawable/side_materi"
+                android:textColor="#A81F1F"
                 android:fontFamily="monospace"
                 android:gravity="center"
                 android:text="Penyebab"
-                android:textColor="#ffff"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -74,54 +63,54 @@
             <Button
                 android:id="@+id/komplikasi"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="80dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/side_two"
+                android:background="@drawable/side_materi"
+                android:textColor="#A81F1F"
                 android:fontFamily="monospace"
                 android:gravity="center"
                 android:text="KOMPLIKASI"
-                android:textColor="#fff"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/klasifikasi"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="80dp"
                 android:layout_marginBottom="16dp"
-                android:background="@drawable/side_two"
+                android:background="@drawable/side_materi"
+                android:textColor="#A81F1F"
                 android:fontFamily="monospace"
                 android:gravity="center"
                 android:text="KLASIFIKASI ANEMIA"
-                android:textColor="#ffff"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/pemeriksaan"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="80dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/side_two"
+                android:background="@drawable/side_materi"
+                android:textColor="#A81F1F"
                 android:fontFamily="monospace"
                 android:gravity="center"
                 android:text="Pemeriksaan diagnosis "
                 android:textAlignment="center"
-                android:textColor="#ffff"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/pengobatan"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="80dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/side_two"
+                android:background="@drawable/side_materi"
+                android:textColor="#A81F1F"
                 android:fontFamily="monospace"
                 android:gravity="center"
                 android:text="PENGOBATAN"
                 android:textAlignment="center"
-                android:textColor="#ffff"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 

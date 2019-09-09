@@ -3,22 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="@drawable/backjenis"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_vertical"
     android:padding="@dimen/activity_margin"
     tools:context=".Menu.TentangActivity">
 
-    <ImageView
-        android:layout_gravity="center_horizontal"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/darah"/>
-
     <TextView
         android:textSize="18dp"
-        android:textColor="@color/White"
+        android:textColor="#000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
@@ -27,14 +21,14 @@
     <TextView
         android:textSize="18dp"
         android:fontFamily="monospace"
-        android:textColor="@color/White"
+        android:textColor="#000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:text="Choirunnisa"/>
     <TextView
         android:fontFamily="monospace"
-        android:textColor="@color/White"
+        android:textColor="#000"
         android:textSize="18dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

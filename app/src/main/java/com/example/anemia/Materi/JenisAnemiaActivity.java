@@ -69,7 +69,7 @@ public class JenisAnemiaActivity extends AppCompatActivity {
             mDotsSlider.addView(mDots[i]);
         }
         if (mDots.length > 0){
-            mDots[position].setTextColor(getResources().getColor(R.color.White));
+            mDots[position].setTextColor(getResources().getColor(R.color.fbutton_color_concrete));
         }
     }
     ViewPager.OnPageChangeListener viewListener = new ViewPager.OnPageChangeListener() {

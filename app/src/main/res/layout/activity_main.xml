@@ -5,7 +5,6 @@
     android:padding="16dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backjenis"
     android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
@@ -21,7 +20,7 @@
         android:gravity="center"
         android:text=" Menu "
         android:fontFamily="monospace"
-        android:textColor="#fff"
+        android:textColor="#000"
         android:textSize="52sp"
         android:textStyle="bold"/>
 

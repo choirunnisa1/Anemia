@@ -5,22 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/backjenis"
+    android:background="#7CBBB8B8"
     tools:context=".Materi.PenyebabActivity">
     <TextView
-        android:id="@+id/penyebabAnemia"
-        android:background="@drawable/side_two"
-        android:layout_marginTop="20dp"
-        android:padding="15dp"
-        android:textSize="30sp"
-        android:textStyle="bold"
+        android:padding="10dp"
+        android:fontFamily="s"
+        android:layout_margin="10dp"
+        android:background="@drawable/side_more"
         android:textColor="@color/White"
-        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="PENYEBAB ANEMIA"/>
+        android:text="Penyebab"
+        android:textSize="40sp"
+        android:textAlignment="center"/>
     <ScrollView
-        android:padding="@dimen/activity_margin"
+       android:paddingBottom="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:paddingLeft="@dimen/activity_margin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
@@ -61,7 +63,7 @@
                 <LinearLayout
                     style="@style/subIsi">
                     <com.codesgood.views.JustifiedTextView
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
@@ -72,7 +74,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
                     <com.codesgood.views.JustifiedTextView
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
@@ -100,13 +102,13 @@
                         android:textSize="14sp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:text="- Perdarahan karena kecacingan dan trauma atau luka yang mengakibatkan kadar Hb menurun. "/>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:fontFamily="monospace"
                         android:textSize="14sp"
                         android:layout_width="match_parent"
@@ -142,7 +144,7 @@
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
                         android:fontFamily="monospace"
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:textSize="14sp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"

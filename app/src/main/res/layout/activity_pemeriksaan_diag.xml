@@ -4,28 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backjenis"
     android:orientation="vertical"
     tools:context=".Materi.PemeriksaanDiagActivity">
-
     <TextView
+        android:padding="10dp"
+        android:fontFamily="s"
         android:layout_margin="10dp"
-        android:fontFamily="monospace"
-        android:id="@+id/judulDiagnosa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="@dimen/activity_margin"
-        android:layout_marginLeft="@dimen/activity_margin"
-        android:background="@drawable/side_two"
-        android:padding="15dp"
-        android:text="DIAGNOSA PEMERIKSAAN \nANEMIA"
-        android:textAlignment="center"
+        android:background="@drawable/side_more"
         android:textColor="@color/White"
-        android:textSize="28sp"
-        android:textStyle="bold" />
-
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pemeriksaan Diagnosis"
+        android:textSize="32sp"
+        android:textAlignment="center"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -59,7 +51,7 @@
                     style="@style/subtitle"
                     android:background="@drawable/side_two"
                     android:drawableLeft="@drawable/atas"
-                    android:fontFamily="monospace"
+                    android:fontFamily="sans-serif-condensed-medium"
                     android:text=" - Pemeriksaan penyaring  "
                     android:textSize="14sp" />
 
@@ -94,7 +86,7 @@
                 <LinearLayout style="@style/subIsi">
 
                     <com.codesgood.views.JustifiedTextView
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="monospace"
@@ -121,7 +113,7 @@
                 <LinearLayout style="@style/subIsi">
 
                     <com.codesgood.views.JustifiedTextView
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="monospace"
@@ -148,7 +140,7 @@
                 <LinearLayout style="@style/subIsi">
 
                     <com.codesgood.views.JustifiedTextView
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="monospace"
@@ -156,7 +148,7 @@
                         android:textSize="14sp">
                     </com.codesgood.views.JustifiedTextView>
                     <com.codesgood.views.JustifiedTextView
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="monospace"
@@ -167,7 +159,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="monospace"
@@ -178,7 +170,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="monospace"

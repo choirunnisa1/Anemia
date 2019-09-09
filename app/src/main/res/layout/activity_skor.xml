@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_vertical"
-    android:background="@drawable/backjenis"
     android:padding="30dp"
     tools:context=".SkorActivity">
 
     <TextView
+        android:textColor="#000"
+        android:fontFamily="monospace"
         android:id="@+id/judulskor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,7 +27,7 @@
         android:textSize="150dp"
         android:text="100"
         android:textAlignment="center"
-        android:textColor="#fff"
+
         />
 
     <LinearLayout
@@ -35,21 +36,24 @@
         android:orientation="horizontal"
         android:gravity="center_horizontal"
         android:layout_height="wrap_content">
+
         <Button
-            android:id="@+id/ulangkuis"
-            android:text="Ulangi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
+            android:layout_marginRight="20dp"
             android:id="@+id/belajar"
-            android:text="Belajar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:background="@drawable/ic_reading"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <Button
+            android:layout_marginRight="20dp"
+            android:id="@+id/ulangkuis"
+            android:background="@drawable/ic_refresh"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
         <Button
             android:id="@+id/home"
-            android:text="Home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:background="@drawable/ic_house"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
     </LinearLayout>
 
 

@@ -5,32 +5,40 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:padding="@dimen/activity_margin"
-    android:background="@drawable/backjenis"
     tools:context=".Materi.AnemiaActivity">
 
-
-
     <TextView
-        android:id="@+id/judulAnemia"
-        android:background="@drawable/side_two"
-        android:layout_marginTop="20dp"
-        android:padding="15dp"
-        android:textSize="30sp"
-        android:textStyle="bold"
+        android:padding="10dp"
+        android:fontFamily="s"
+       android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/side_more"
         android:textColor="@color/White"
-        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="ANEMIA"/>
+        android:text="Anemia"
+        android:textSize="40sp"
+        android:textAlignment="center"/>
 
+   <LinearLayout
+       android:paddingLeft="@dimen/activity_margin"
+       android:paddingRight="@dimen/activity_margin"
+       android:paddingBottom="@dimen/activity_margin"
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
     <com.codesgood.views.JustifiedTextView
-        android:padding="@dimen/activity_margin"
+        android:paddingBottom="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:paddingLeft="@dimen/activity_margin"
+        android:textColor="#000"
         android:id="@+id/subAnemia1"
         android:text="@string/anemia1"
         android:fontFamily="monospace"
         android:layout_marginTop="25dp"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -39,7 +47,8 @@
         android:id="@+id/subAnemia2"
         android:text="@string/anemia2"
         android:fontFamily="monospace"
-        android:textSize="16sp"
+        android:textSize="18sp"
+        android:textColor="#000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -48,8 +57,10 @@
         android:id="@+id/subAnemia3"
         android:text="@string/anemia3"
         android:fontFamily="monospace"
-        android:textSize="16sp"
+        android:textSize="18sp"
+        android:textColor="#000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+   </LinearLayout>
 
 </LinearLayout>

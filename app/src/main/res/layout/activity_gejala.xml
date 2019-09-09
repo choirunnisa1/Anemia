@@ -5,22 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/backjenis"
     tools:context=".Materi.GejalaActivity">
 
 
     <TextView
-        android:id="@+id/gejalaAnemia"
-        android:background="@drawable/side_two"
-        android:layout_marginTop="20dp"
-        android:padding="15dp"
-        android:textSize="30sp"
-        android:textStyle="bold"
+        android:padding="10dp"
+        android:fontFamily="s"
+        android:layout_margin="10dp"
+        android:background="@drawable/side_more"
         android:textColor="@color/White"
-        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="GEJALA ANEMIA"/>
+        android:text="Gejala"
+        android:textSize="40sp"
+        android:textAlignment="center"/>
     <ScrollView
         android:padding="@dimen/activity_margin"
         android:layout_width="match_parent"
@@ -35,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="#000"
                 android:fontFamily="monospace"
-                android:textSize="15sp"
+                android:textSize="18sp"
                 android:text="@string/gejala1"/>
             <LinearLayout
                 android:orientation="vertical"
@@ -44,7 +43,7 @@
                 android:layout_height="60dp">
                 <TextView
                     android:fontFamily="monospace"
-                    android:textSize="14sp"
+                    android:textSize="18sp"
                     android:id="@+id/tv_gejala1"
                     style="@style/subtitle"
                     android:drawableLeft="@drawable/atas"
@@ -56,7 +55,7 @@
                         android:textColor="@color/White"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="14sp"
+                        android:textSize="18sp"
                         android:fontFamily="monospace"
                         android:text="Rasa lemah, lesu, cepat lelah, telinga mendenging (tinnitus), mata berkunang-kunang, kaki terasa dingin, sesak nafas dan dispepsia. Pada pemeriksaan, penderita tampak pucat, yang mudah dilihat pada konyungtiva, mukosa mulut, telapak tangan dan jaringan di bawah kuku"/>
                 </LinearLayout>
@@ -68,7 +67,7 @@
                 android:layout_height="60dp">
                 <TextView
                     android:fontFamily="monospace"
-                    android:textSize="14sp"
+                    android:textSize="18sp"
                     android:id="@+id/tv_gejala2"
                     style="@style/subtitle"
                     android:drawableLeft="@drawable/atas"
@@ -79,18 +78,18 @@
                     <com.codesgood.views.JustifiedTextView
                         android:fontFamily="monospace"
                         android:textSize="14sp"
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="a. Anemia defisiensi besi: warna biru hingga putih pada mata, kuku rapuh, penurunan nafsu makan, kelelahan, sakit kepala, mudah marah, warna kulit pucat, sesak nafas, sakit pada lidah, nafsu makan yang tidak biasa yaitu suka pilih-pilih makanan (pica), kelemahan"/>
                     <TextView
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:fontFamily="monospace"
-                        android:textSize="14sp"
+                        android:textSize="18sp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="b. Anemia megaloblastik: glossitis (peradangan atau infeksi lidah menyebabkan lidah membengkak), gangguan neurologik pada defisiensi vitamin B12 seperti parastesi tangan dan kaki, kehilangan memori selanjutnya jika keadaan memberat dapat mempengaruhi gaya berjalan, kebutaan akibat atropi N.Optikus dan gangguan kejiwaan"/>
@@ -98,9 +97,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:fontFamily="monospace"
-                        android:textSize="14sp"
+                        android:textSize="18sp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="c. Anemia hemolitik: kedinginan, urin berwarna gelap, pembesaran limpa, kelelahan, demam, warna kulit pucat, denyut jantung cepat, sesak nafas, warna kulit kuning"/>
@@ -108,8 +107,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
-                        android:textColor="@color/White"
-                        android:textSize="14sp"
+                        android:textColor="#000"
+                        android:textSize="18sp"
                         android:fontFamily="monospace"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -123,7 +122,7 @@
                 android:layout_height="60dp">
                 <TextView
                     android:fontFamily="monospace"
-                    android:textSize="14sp"
+                    android:textSize="18sp"
                     android:id="@+id/tv_gejala3"
                     style="@style/subtitle"
                     android:drawableLeft="@drawable/atas"
@@ -132,7 +131,7 @@
                 <LinearLayout
                     style="@style/subIsi">
                     <com.codesgood.views.JustifiedTextView
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:textSize="14sp"
                         android:fontFamily="monospace"
                         android:layout_width="match_parent"
