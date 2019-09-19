@@ -21,13 +21,15 @@
         <activity android:name=".Menu.BantuanActivity" />
         <activity android:name=".Menu.MateriActivity" />
         <activity android:name=".Menu.TentangActivity" />
-        <activity android:name=".Menu.KuisActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".Menu.KuisActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity android:name=".SplashActivity">
         </activity>
         <activity android:name=".MainActivity" />
     </application>
