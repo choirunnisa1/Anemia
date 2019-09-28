@@ -20,21 +20,25 @@ public class DataSoal {
             "Kortikosteroid merupakan salah satu cara untuk mengobati anemia, di mana fungsi obat ini adalah untuk...",
             "Anemia merupakan suatu penyakit yang disebabkan kurangnya...",
             "Jenis penyakit anemia yang disebabkan oleh kurangnya zat besi yang berperan dalam pembentukkan hemoglobin adalah..",
+
             "Berikut merupakan komplikasi yang dialami bayi yang dilahirkan oleh ibu yang mengindap anemia, kecuali",
             "Gejala anemia dapat digolongkan menjadi berapa jenis?",
             "Salah satu pengobatan yang dapat dilakukan oleh pengidap anemia adalah",
             "Berikut makanan yang dianjurkan dikonsumsi oleh penderita anemia, kecuali...",
             "Yang paling rentan terserang anemia adakah",
+
             "Jenis pemeriksaan laboratorium untuk diagnosis anemia yang hanya dikerjakan atas indikasi khusus adalah",
             "Berikut yang bukan merupakan gejala umum anemia adalah",
             "Kelelahan, pucat, mudah memar, pendafarahan gusi merupakan gejala dari anemia",
             "Glossitis merupakan gejala dari jenis anemia...",
             "Berikut merupakan komplikasi dari anemia, kecuali",
+
             "Selain zat besi dan asam folat, zat gizi lain yang berperan penting dalam pembuatan hemoglobin adalah",
             "Secara garis besar patogenesis anemia penyakit kronis dititikberatkan pada 3 abnormalitas utama, salah satunya merupakan ketahanan hidup eritrosit yang memendek akibat terjadinya lisis......lebih dini",
             "Di negara barat kadar hemoglobin paling rendah untuk laki-laki adalah",
             "Jenis pemeriksaan anemia yang dibutuhkan untuk diagnosis definitif pada beberapa jenis anemia adalah",
             "Bentuk anemia derajat ringan sampai sedang yang terjadi akibat infeksi kronis, peradangan trauma atau penyakit neoplastik yang telah berlangsung 1–2 bulan dan tidak disertai penyakit hati, ginjal dan endokrin adalah...",
+
             "Salah satu pemeriksaan yang hanya dikerjakan atas indikasi khusus pada jenis anemia megaloblastik adalah...",
             "Fungsi dari hemoglobin adalah...",
             "Berikut merupakan jenis makanan yang dapat membantu mencegah anemia, kecuali...",
