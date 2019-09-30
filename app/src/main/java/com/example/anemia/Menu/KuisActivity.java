@@ -23,9 +23,9 @@ public class KuisActivity extends AppCompatActivity {
     DataSoal dataSoal;
     double skor, benar;
     RadioGroup grupoption;
-    RadioButton optiona, optionb, optionc, optiond;
+    Button optiona, optionb, optionc, optiond;
     TextView no_soal, tv_soal;
-    Button buttonnext;
+//    Button buttonnext;
     String jawaban;
 
     ArrayList<Integer> randomSoal;
@@ -39,30 +39,34 @@ public class KuisActivity extends AppCompatActivity {
         randomSoal = new ArrayList<>();
         indexKuis = 0;
 
-        grupoption = findViewById(R.id.rgop);
+//        grupoption = findViewById(R.id.rgop);
         tv_soal = findViewById(R.id.soal);
         no_soal = findViewById(R.id.no);
         optiona = findViewById(R.id.optiona);
         optionb = findViewById(R.id.optionb);
         optionc = findViewById(R.id.optionc);
         optiond = findViewById(R.id.optiond);
-        buttonnext = findViewById(R.id.submit);
+//        buttonnext = findViewById(R.id.submit);
         dataSoal = new DataSoal();
 
         lcm();
 
-        buttonnext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (grupoption.getCheckedRadioButtonId() == -1) {
-                    Toast.makeText(KuisActivity.this, "Belum ada yang dipilih", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                endQuis();
-                cekJawaban();
-            }
-        });
+        cekJawaban();
+
+
+//        buttonnext.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (grupoption.getCheckedRadioButtonId() == -1) {
+//                    Toast.makeText(KuisActivity.this, "Belum ada yang dipilih", Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
+//                endQuis();
+//                cekJawaban();
+//            }
+//        });
     }
+
 
     public void lcm() {
         int i;
@@ -74,7 +78,8 @@ public class KuisActivity extends AppCompatActivity {
         int[] Xn = new int[n];
 
         Random b = new Random();
-        Xn0 = b.nextInt(m - 0) + 0;
+        Xn0 = b.nextInt(m - 1) + 1;
+        Log.d("Xn0 = ",String.valueOf(Xn0));
 
         for (i = 1; i <= 11; i++) {
 
@@ -93,11 +98,71 @@ public class KuisActivity extends AppCompatActivity {
         }
 
         updateSoal();
+
         Log.d("RANDOMSOAL", randomSoal.toString());
     }
 
+    public void cekJawaban(){
+        optiona.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                endQuis();
+                if (optiona.getText()==jawaban){
+                    benar();
+                }else{
+                    Toast.makeText(getApplicationContext(), "Anda salah", Toast.LENGTH_SHORT).show();
+                    salah();
+                    updateSoal();
+                }
+            }
+        });
+
+        optionb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                endQuis();
+                if (optionb.getText()==jawaban){
+                    benar();
+                }else{
+                    Toast.makeText(getApplicationContext(), "Anda salah", Toast.LENGTH_SHORT).show();
+                    salah();
+                    updateSoal();
+                }
+            }
+        });
+
+        optionc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                endQuis();
+                if (optionc.getText()==jawaban){
+                    benar();
+                }else{
+                    Toast.makeText(getApplicationContext(), "Anda salah", Toast.LENGTH_SHORT).show();
+                    salah();
+                    updateSoal();
+                }
+            }
+        });
+
+        optiond.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                endQuis();
+                if (optiond.getText()==jawaban){
+                    benar();
+                }else{
+                    Toast.makeText(getApplicationContext(), "Anda salah", Toast.LENGTH_SHORT).show();
+                    salah();
+                    updateSoal();
+                }
+            }
+        });
+
+    }
+
     public void updateSoal() {
-        grupoption.clearCheck();
+//        grupoption.clearCheck();
         if (indexKuis == 10) {
             skor = (benar * 10);
             String skorx = String.valueOf(skor);
@@ -114,47 +179,9 @@ public class KuisActivity extends AppCompatActivity {
             jawaban = dataSoal.getJawaban(randomSoal.get(indexKuis) - 1);
         }
     }
+//
 
-    public void cekJawaban() {
-        if (optiona.isChecked()) {
-            if (optiona.getText().toString().equals(jawaban)) {
-                benarloh();
-            } else {
-                Toast.makeText(getApplicationContext(), "Anda salah", Toast.LENGTH_SHORT).show();
-                salah();
-                updateSoal();
-            }
-        }
-        if (optionb.isChecked()) {
-            if (optionb.getText().toString().equals(jawaban)) {
-                benarloh();
-            } else {
-                Toast.makeText(getApplicationContext(), "Anda salah", Toast.LENGTH_SHORT).show();
-                salah();
-                updateSoal();
-            }
-        }
-        if (optionc.isChecked()) {
-            if (optionc.getText().toString().equals(jawaban)) {
-                benarloh();
-            } else {
-                Toast.makeText(getApplicationContext(), "Anda salah", Toast.LENGTH_SHORT).show();
-                salah();
-                updateSoal();
-            }
-        }
-        if (optiond.isChecked()) {
-            if (optiond.getText().toString().equals(jawaban)) {
-                benarloh();
-            } else {
-                Toast.makeText(getApplicationContext(), "Anda salah", Toast.LENGTH_SHORT).show();
-                salah();
-                updateSoal();
-            }
-        }
-    }
-
-    public void benarloh() {
+    public void benar() {
         benar = benar + 1;
         Toast.makeText(getApplicationContext(), "Anda benar", Toast.LENGTH_SHORT).show();
         updateSoal();
@@ -172,4 +199,7 @@ public class KuisActivity extends AppCompatActivity {
     public void onBackPressed() {
         Toast.makeText(getApplicationContext(), "Tidak bisa kembali ke kuis. Silahkan selesaikan terlebih dahulu", Toast.LENGTH_SHORT).show();
     }
+
+
+
 }

@@ -28,50 +28,90 @@
         android:minHeight="150dp"
         android:text="@string/gejala1"
         />
-    <RadioGroup
-        android:padding="10dp"
-        android:id="@+id/rgop"
+<!--    <RadioGroup-->
+<!--        android:padding="10dp"-->
+<!--        android:id="@+id/rgop"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <RadioButton-->
+<!--            android:background="@drawable/side_two"-->
+<!--            android:padding="5dp"-->
+<!--            android:text="pil"-->
+<!--            android:fontFamily="monospace"-->
+<!--            android:id="@+id/optiona"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+<!--        <RadioButton-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:background="@drawable/side_two"-->
+<!--            android:fontFamily="monospace"-->
+<!--            android:id="@+id/optionb"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+<!--        <RadioButton-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:background="@drawable/side_two"-->
+<!--            android:fontFamily="monospace"-->
+<!--            android:id="@+id/optionc"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+<!--        <RadioButton-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:background="@drawable/side_two"-->
+<!--            android:fontFamily="monospace"-->
+<!--            android:id="@+id/optiond"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+<!--    </RadioGroup>-->
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <RadioButton
-            android:background="@drawable/side_two"
-            android:fontFamily="monospace"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
             android:id="@+id/optiona"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <RadioButton
-            android:layout_marginTop="8dp"
-            android:background="@drawable/side_two"
-            android:fontFamily="monospace"
+            android:layout_height="wrap_content"
+            android:background="@drawable/side_two">
+        </Button>
+
+        <Button
+            android:layout_marginTop="10dp"
             android:id="@+id/optionb"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <RadioButton
-            android:layout_marginTop="8dp"
-            android:background="@drawable/side_two"
-            android:fontFamily="monospace"
+            android:layout_height="wrap_content"
+            android:background="@drawable/side_two">
+        </Button>
+
+        <Button
+            android:layout_marginTop="10dp"
             android:id="@+id/optionc"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <RadioButton
-            android:layout_marginTop="8dp"
-            android:background="@drawable/side_two"
-            android:fontFamily="monospace"
+            android:layout_height="wrap_content"
+            android:background="@drawable/side_two">
+        </Button>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:text="haha"
             android:id="@+id/optiond"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/submit"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:shadowColor="@color/fbutton_color_pomegranate"
-        android:background="#EDEE8823"
-        android:pointerIcon="arrow"
-        android:textColor="#fff"
-        android:text="Submit" />
+            android:layout_height="wrap_content"
+            android:background="@drawable/side_two">
+        </Button>
+    </LinearLayout>
+<!--    <Button-->
+<!--        android:id="@+id/submit"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="end"-->
+<!--        android:shadowColor="@color/fbutton_color_pomegranate"-->
+<!--        android:background="#EDEE8823"-->
+<!--        android:pointerIcon="arrow"-->
+<!--        android:textColor="#fff"-->
+<!--        android:text="Submit" />-->
 
 </LinearLayout>
