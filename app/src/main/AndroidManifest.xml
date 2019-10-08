@@ -21,7 +21,7 @@
         <activity android:name=".Menu.BantuanActivity" />
         <activity android:name=".Menu.MateriActivity" />
         <activity android:name=".Menu.TentangActivity" />
-        <activity android:name=".Menu.KuisActivity">
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,7 +29,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".SplashActivity">
+        <activity android:name=".Menu.KuisActivity">
         </activity>
         <activity android:name=".MainActivity" />
     </application>

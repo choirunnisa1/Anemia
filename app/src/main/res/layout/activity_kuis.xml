@@ -23,46 +23,11 @@
         android:gravity="center"
         android:textAlignment="center"
         android:padding="20dp"
-        android:fontFamily="monospace"
-        android:textColor="#000"
+        android:fontFamily="@font/roboto"
+        android:textColor="#000000"
         android:minHeight="150dp"
         android:text="@string/gejala1"
         />
-<!--    <RadioGroup-->
-<!--        android:padding="10dp"-->
-<!--        android:id="@+id/rgop"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
-<!--        <RadioButton-->
-<!--            android:background="@drawable/side_two"-->
-<!--            android:padding="5dp"-->
-<!--            android:text="pil"-->
-<!--            android:fontFamily="monospace"-->
-<!--            android:id="@+id/optiona"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content" />-->
-<!--        <RadioButton-->
-<!--            android:layout_marginTop="8dp"-->
-<!--            android:background="@drawable/side_two"-->
-<!--            android:fontFamily="monospace"-->
-<!--            android:id="@+id/optionb"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content" />-->
-<!--        <RadioButton-->
-<!--            android:layout_marginTop="8dp"-->
-<!--            android:background="@drawable/side_two"-->
-<!--            android:fontFamily="monospace"-->
-<!--            android:id="@+id/optionc"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content" />-->
-<!--        <RadioButton-->
-<!--            android:layout_marginTop="8dp"-->
-<!--            android:background="@drawable/side_two"-->
-<!--            android:fontFamily="monospace"-->
-<!--            android:id="@+id/optiond"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content" />-->
-<!--    </RadioGroup>-->
 
     <LinearLayout
         android:layout_marginTop="20dp"
