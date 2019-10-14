@@ -9,7 +9,7 @@
 
     <TextView
         android:padding="10dp"
-        android:fontFamily="s"
+        android:fontFamily="@font/roboto"
         android:layout_margin="10dp"
         android:background="@drawable/side_more"
         android:textColor="@color/White"
@@ -37,18 +37,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/roboto"
                     android:text="-"
-                    android:textSize="18sp" />
+                    android:textSize="14sp" />
 
                 <com.codesgood.views.JustifiedTextView
                     android:textColor="#000"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/roboto"
                     android:text="Kelelahan berat. Tanpa penanganan yang baik, anemia dapat menimbulkan kelelahan berat pada penderitanya sehingga mengganggu aktivitas sehari-hari."
-                    android:textSize="18sp" />
+                    android:textSize="14sp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -61,18 +61,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/roboto"
                     android:text="-"
-                    android:textSize="18sp" />
+                    android:textSize="14sp" />
 
                 <com.codesgood.views.JustifiedTextView
                     android:textColor="#000"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/roboto"
                     android:text="Rentan terkena infeksi. Kekurangan zat besi yang menyebabkan anemia dapat berpengaruh pada kemampuan sistem imun dalam memerangi berbagai patogen, sehingga penderita anemia lebih rentan terkena penyakit infeksi."
-                    android:textSize="18sp" />
+                    android:textSize="14sp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -85,18 +85,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/roboto"
                     android:text="-"
-                    android:textSize="18sp" />
+                    android:textSize="14sp"/>
 
                 <com.codesgood.views.JustifiedTextView
                     android:textColor="#000"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/roboto"
                     android:text="Komplikasi dan gangguan kehamilan. Wanita hamil yang kekurangan asam folat berisiko mengalami gangguan kehamilan dan perkembangan janin. Selain itu, anemia juga dapat menyebabkan sang ibu mengalami depresi pasca kelahiran melahirkan dan gangguan pada bayi yang dilahirkan, seperti:\na. Kelahiran prematur sebelum minggu 37.\nb. Berat badan di bawah normal.\nc. Masalah pada kandungan zat besi dalam darah.\nd.	Hasil tes kemampuan mental yang kurang"
-                    android:textSize="18sp" />
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -109,18 +109,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/roboto"
                     android:text="-"
-                    android:textSize="18sp" />
+                    android:textSize="14sp" />
 
                 <com.codesgood.views.JustifiedTextView
                     android:textColor="#000"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/roboto"
                     android:text="Kematian. Beberapa anemia yang bersifat bawaan, seperti anemia sel sabit, bisa menjadi serius dan mengancam hidup penderitanya. Kehilangan darah dengan tanpa penanganan yang baik dapat menyebabkan anemia berat dan kematian"
-                    android:textSize="18sp" />
+                    android:textSize="14sp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -133,18 +133,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/roboto"
                     android:text="-"
-                    android:textSize="18sp" />
+                    android:textSize="14sp" />
 
                 <com.codesgood.views.JustifiedTextView
                     android:textColor="#000"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
-                    android:fontFamily="monospace"
+                    android:fontFamily="@font/roboto"
                     android:text="Gangguan jantung. Anemia dapat menyebabkan detak jantung menjadi tidak beraturan (aritmia) akibat harus memompa darah lebih keras untuk mengompensasi kekurangan oksigen dalam darah. Kondisi tersebut dapat menyebabkan pembesaran jantung atau gagal jantung."
-                    android:textSize="18sp" />
+                    android:textSize="14sp"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

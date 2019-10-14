@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/backjenis"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
@@ -12,8 +11,7 @@
     <TextView
         android:layout_marginTop="40dp"
         android:id="@+id/welcome"
-        android:fontFamily="monospace"
-        android:textColor="#fff"
+        android:fontFamily="@font/roboto"
         android:textAlignment="center"
         android:textSize="30sp"
         android:layout_width="match_parent"
@@ -41,9 +39,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Moble Learning Anemia"
-        android:fontFamily="monospace"
-        android:textAlignment="center"
-        android:textColor="#fff"/>
+        android:fontFamily="@font/roboto"
+        android:textAlignment="center" />
 
 
 </LinearLayout>

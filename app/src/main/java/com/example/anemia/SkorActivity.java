@@ -18,11 +18,6 @@ public class SkorActivity extends AppCompatActivity {
     TextView skor;
     Button btnhome, btnreload, btnmateri;
     String hasilakhir;
-    int n;
-    public static int[] Xn;
-    public int Xn0;
-    public int i, a, c, m;
-    public int nilaiAcak;
 
 
     @Override
@@ -34,7 +29,7 @@ public class SkorActivity extends AppCompatActivity {
         btnmateri = findViewById(R.id.belajar);
         btnreload = findViewById(R.id.ulangkuis);
 
-        skor = findViewById(R.id.skornya);
+        skor = findViewById(R.id.skore);
         hasilakhir = getIntent().getStringExtra("skorakhir");
 
         skor.setText(hasilakhir);

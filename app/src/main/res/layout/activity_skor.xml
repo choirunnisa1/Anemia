@@ -6,32 +6,54 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_vertical"
-    android:padding="30dp"
+    android:padding="10dp"
     tools:context=".SkorActivity">
-
     <TextView
+        android:textStyle="bold"
         android:textColor="#000"
-        android:fontFamily="monospace"
-        android:id="@+id/judulskor"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Skor kamu adalah :"
+        android:fontFamily="@font/roboto"
+        android:textSize="20sp"
         android:textAlignment="center"
-        android:textSize="30sp"/>
-
-    <TextView
-        android:layout_marginTop="20dp"
-        android:id="@+id/skornya"
+        android:text="S E L A M A T"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="150dp"
-        android:text="100"
-        android:textAlignment="center"
+        android:layout_height="wrap_content"/>
 
-        />
+<TextView
+    android:layout_marginTop="20dp"
+    android:textColor="#000"
+    android:fontFamily="@font/roboto"
+    android:textSize="30sp"
+    android:textAlignment="center"
+    android:text="Skor Anda"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</TextView>
+  <LinearLayout
+      android:layout_gravity="center_horizontal"
+      android:layout_width="250dp"
+      android:layout_height="250dp"
+      android:orientation="vertical"
+      android:background="@drawable/ic_star"
+      >
+
+      <TextView
+          android:id="@+id/skore"
+         android:textColor="#000"
+          android:textStyle="bold"
+          android:fontFamily="@font/roboto"
+          android:textSize="60sp"
+          android:textAlignment="center"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:text="100"
+         android:gravity="center_vertical">
+
+      </TextView>
+  </LinearLayout>
 
     <LinearLayout
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:gravity="center_horizontal"
@@ -40,18 +62,18 @@
         <Button
             android:layout_marginRight="20dp"
             android:id="@+id/belajar"
-            android:background="@drawable/ic_reading"
+            android:background="@drawable/reading"
             android:layout_width="80dp"
             android:layout_height="80dp" />
         <Button
             android:layout_marginRight="20dp"
-            android:id="@+id/ulangkuis"
-            android:background="@drawable/ic_refresh"
+            android:id="@+id/home"
+            android:background="@drawable/house"
             android:layout_width="80dp"
             android:layout_height="80dp" />
         <Button
-            android:id="@+id/home"
-            android:background="@drawable/ic_house"
+            android:id="@+id/ulangkuis"
+            android:background="@drawable/refresh"
             android:layout_width="80dp"
             android:layout_height="80dp" />
     </LinearLayout>

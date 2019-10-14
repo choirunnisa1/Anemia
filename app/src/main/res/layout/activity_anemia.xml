@@ -9,7 +9,7 @@
 
     <TextView
         android:padding="10dp"
-        android:fontFamily="s"
+        android:fontFamily="@font/roboto"
        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
@@ -36,9 +36,9 @@
         android:textColor="#000"
         android:id="@+id/subAnemia1"
         android:text="@string/anemia1"
-        android:fontFamily="monospace"
+        android:fontFamily="@font/roboto"
         android:layout_marginTop="25dp"
-        android:textSize="18sp"
+        android:textSize="14sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -46,8 +46,8 @@
         android:padding="@dimen/activity_margin"
         android:id="@+id/subAnemia2"
         android:text="@string/anemia2"
-        android:fontFamily="monospace"
-        android:textSize="18sp"
+        android:fontFamily="@font/roboto"
+        android:textSize="14sp"
         android:textColor="#000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -56,8 +56,8 @@
         android:padding="@dimen/activity_margin"
         android:id="@+id/subAnemia3"
         android:text="@string/anemia3"
-        android:fontFamily="monospace"
-        android:textSize="18sp"
+        android:fontFamily="@font/roboto"
+        android:textSize="14sp"
         android:textColor="#000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

@@ -5,12 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#7CBBB8B8"
     tools:context=".Materi.PengobatanActivity">
 
    <TextView
        android:padding="10dp"
-       android:fontFamily="s"
+       android:fontFamily="@font/roboto"
        android:layout_margin="10dp"
        android:background="@drawable/side_more"
        android:textColor="@color/White"
@@ -29,8 +28,8 @@
     <com.codesgood.views.JustifiedTextView
         android:textColor="#000"
         android:layout_width="match_parent"
-        android:fontFamily="monospace"
-        android:textSize="18sp"
+        android:fontFamily="@font/roboto"
+        android:textSize="14sp"
         android:layout_height="wrap_content"
         android:text="Pengobatan harus diarahkan pada penyebab anemia, dan mungkin termasuk"/>
     <LinearLayout
@@ -43,19 +42,19 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:fontFamily="monospace"
+            android:fontFamily="@font/roboto"
             android:textColor="#000"
             android:text="-"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
         <com.codesgood.views.JustifiedTextView
             android:textColor="#000"
             android:layout_width="364dp"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:fontFamily="monospace"
+            android:fontFamily="@font/roboto"
             android:text="Transfusi Darah"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -67,19 +66,19 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:fontFamily="monospace"
+            android:fontFamily="@font/roboto"
             android:textColor="#000"
             android:text="-"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
         <com.codesgood.views.JustifiedTextView
             android:textColor="#000"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:fontFamily="monospace"
+            android:fontFamily="@font/roboto"
             android:text="Kortikosteroid atau obat lain yang menekan sistem kekebalan tubuh"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -92,18 +91,18 @@
             android:textColor="#000"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:fontFamily="monospace"
+            android:fontFamily="@font/roboto"
             android:text="-"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
         <com.codesgood.views.JustifiedTextView
             android:textColor="#000"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:fontFamily="monospace"
+            android:fontFamily="@font/roboto"
             android:text="Erythropoietin, obat yang membantu sumsum tulang Anda membuat lebih banyak sel darah"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -116,18 +115,18 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:fontFamily="monospace"
+            android:fontFamily="@font/roboto"
             android:text="-"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
         <com.codesgood.views.JustifiedTextView
             android:textColor="#000"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
-            android:fontFamily="monospace"
+            android:fontFamily="@font/roboto"
             android:text="Suplemen zat besi, vitamin B12, asam folat, atau vitamin dan mineral lainnya"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
     </LinearLayout>
     </LinearLayout>
 

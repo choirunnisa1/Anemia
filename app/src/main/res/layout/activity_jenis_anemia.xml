@@ -8,7 +8,7 @@
     tools:context=".Materi.JenisAnemiaActivity">
     <TextView
         android:padding="10dp"
-        android:fontFamily="s"
+        android:fontFamily="@font/roboto"
         android:layout_margin="10dp"
         android:background="@drawable/side_more"
         android:textColor="@color/White"
@@ -18,50 +18,191 @@
         android:text="Klasifikasi"
         android:textSize="40sp"
         android:textAlignment="center"/>
-    <RelativeLayout
+    <ScrollView
+        android:paddingBottom="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:paddingLeft="@dimen/activity_margin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.codesgood.views.JustifiedTextView
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:fontFamily="@font/roboto"
+                android:textSize="14sp"
+                android:text="Anemia sendiri terdiri dari beberapa jenis, yaitu :"/>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/ViewPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/jenis1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="14sp"
+                    android:id="@+id/tv_jenis1"
+                    style="@style/subtitle"
+                    android:drawableLeft="@drawable/atas"
+                    android:background="@drawable/side_two"
+                    android:text="  1. Anemia Defisiensi Besi "/>
+                <LinearLayout
+                    style="@style/subIsi">
+                    <com.codesgood.views.JustifiedTextView
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Anemia defisiensi besi merupakan suatu jenis utama anemia di dunia dan terutama sering dijumpai pada perempuan usia subur, disebabkan oleh kehilangan darah sewaktu menstruasi dan peningkatan kebutuhan besi selama kehamilan. Menurut Almatsier anemia defisiensi besi atau anemia zat besi adalah anemia yang disebabkan oleh kekurangan zat besi yang berperan dalam pembentukan hemoglobin, baik karena kekurangan konsumsi atau karena gangguan absorpsi ">
 
-    </android.support.v4.view.ViewPager>
+                    </com.codesgood.views.JustifiedTextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/jenis2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="14sp"
+                    android:id="@+id/tv_jenis2"
+                    style="@style/subtitle"
+                    android:drawableLeft="@drawable/atas"
+                    android:background="@drawable/side_two"
+                    android:text="   2. Anemia Megaloblastik"/>
+                <LinearLayout
+                    style="@style/subIsi">
+                    <com.codesgood.views.JustifiedTextView
+                        android:fontFamily="@font/roboto"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:text="Anemia Megaloblastik ini disebabkan oleh dua jenis yaitu Defisiensi Vitamin B12 dan Defisiensi Asam Folat. Di mana penjelasannya adalah sebagai berikut :"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <com.codesgood.views.JustifiedTextView
+                        android:textColor="#000"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Anemia yang disebabkan oleh defisiensi vitamin B12 dan defisiensi asam folat memperlihatkan perubahan-perubahan sumsum tulang dan darah  perifer yang identik. Defisiensi vitamin B12 sangat jarang terjadi tetapi dapat terjadi akibat ketidakadekuatan masukan pada vegetarian yang ketat, kegagalan absorpsi saluran gantrointestinal, penyakit yang melibatkan ilium atau pankreas yang dapat merusak absorpsi vitamin B12. Tanpa pengobatan  pasien akan meninggal setelah beberapa tahun, biasanya akibat gagal  jantung kongesti sekunder akibat dari anemia."/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <com.codesgood.views.JustifiedTextView
+                        android:textColor="#000"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sedangkan defisiensi asam folat terjadi karena asupan makanan yang kurang gizi asam folat, terutama dapat ditemukan pada orang tua, individu yang jarang makan sayuran dan  buah, alkoholisme, anoreksia nervosa, pasien hemodialisis."/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/jenis3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="14sp"
+                    android:id="@+id/tv_jenis3"
+                    style="@style/subtitle"
+                    android:drawableLeft="@drawable/atas"
+                    android:background="@drawable/side_two"
+                    android:text="   3.	Anemia Hemolitik "/>
+                <LinearLayout
+                    style="@style/subIsi">
+                    <com.codesgood.views.JustifiedTextView
+                        android:textSize="14sp"
+                        android:textColor="#000"
+                        android:fontFamily="@font/roboto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Anemia hemolitik terjadi apabila sel darah merah dihancurkan lebih cepat dari normal. jenisnya kemungkinan karena keturunan atau karena salah satu dari beberapa penyakit, termasuk leukemia dan kanker lainnya, fungsi limpa yang tidak normal, gangguan kekebalan, dan hipertensi berat">   </com.codesgood.views.JustifiedTextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <com.codesgood.views.JustifiedTextView
+                        android:fontFamily="@font/roboto"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gejala utama anemia hemolitik adalah anemia dengan kelainan-kelainan gambaran darah, kelelahan, kelemahan, serta gejala komplikasi bila terjadi kelainan pada organ-organ vital. Pengobatan bergantung pada jenis anemia hemolitik serta jenisnya. Bila disebabkan oleh infeksi maka infeksinya di berantas dan diberikan obat-obat penambah darah. Namun, pada beberapa jenis obat- obatan, hal ini tidak memberikan hasil. Maka transfusi darah yang berulang dapat membantu penderita ini"/>  </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/jenis4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="14sp"
+                    android:id="@+id/tv_jenis4"
+                    style="@style/subtitle"
+                    android:drawableLeft="@drawable/atas"
+                    android:background="@drawable/side_two"
+                    android:text="  4. Anemia Aplastik  "/>
+                <LinearLayout
+                    style="@style/subIsi">
+                    <com.codesgood.views.JustifiedTextView
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Anemia Aplastik adalah anemia yang disebabkan oleh ketidak sanggupan sum-sum tulang belakang membentuk sel darah merah dan juga faktor dari luar tubuh manusia, seperti halnya terpapar bahan kimia, terkena perawatan medis atau bahkan faktor fisik lainnya. Anemia aplastik terjadi ketika tubuh yang anda miliki tidak sanggup untuk memproduksi sel darah merah kembali.Terkadang jenis penyakit anemia yang satu ini tidak diketahui dengan pasti apa jenisnya, namun kini autoimun juga diyakini sebagai salah satu bentuk jenisnya">
+                    </com.codesgood.views.JustifiedTextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/jenis5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="14sp"
+                    android:id="@+id/tv_jenis5"
+                    style="@style/subtitle"
+                    android:drawableLeft="@drawable/atas"
+                    android:background="@drawable/side_two"
+                    android:text="  5. Anemia Kronis  "/>
+                <LinearLayout
+                    style="@style/subIsi">
+                    <com.codesgood.views.JustifiedTextView
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Anemia penyakit kronis merupakan bentuk anemia derajat ringan sampai sedang yang terjadi akibat infeksi kronis, peradangan trauma atau penyakit neoplastik yang telah berlangsung 1–2 bulan dan tidak disertai penyakit hati, ginjal dan endokrin. Jenis anemia ini ditandai dengan kelainan metabolisme besi, sehingga terjadi hipoferemia dan penumpukan besi di makrofag. Secara garis besar patogenesis anemia penyakit kronis dititikberatkan pada 3 abnormalitas utama: (1) ketahanan hidup eritrosit yang memendek akibat terjadinya lisis eritrosit lebih dini, (2) adanya respon sumsum tulang akibat respon eritropoetin yang terganggu atau menurun, (3) gangguan metabolisme berupa gangguan reutilisasi besi">
+                    </com.codesgood.views.JustifiedTextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/dotsLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal"
-        android:padding="20dp">
-    </LinearLayout>
-
-    <Button
-        android:fontFamily="monospace"
-        android:id="@+id/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@color/transparant"
-        android:text="BACK"
-        android:layout_marginBottom="4dp"
-        android:textColor="#000"
-        android:textSize="20sp"
-        android:visibility="invisible" />
-    <Button
-        android:fontFamily="monospace"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:textColor="#000"
-        android:textSize="20sp"
-        android:layout_marginBottom="4dp"
-        android:id="@+id/next"
-        android:background="@color/transparant"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NEXT" />
-    </RelativeLayout>
+    </ScrollView>
 </LinearLayout>

@@ -55,7 +55,7 @@ public class GejalaActivity extends AppCompatActivity {
         if (showingGejala1==true){
             Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
             mtv_gejala1.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
-            params3.height = 450;
+            params3.height = 400;
             mline_gejala1.setLayoutParams(params3);
             showingGejala1= false;
         }else{
@@ -71,7 +71,7 @@ public class GejalaActivity extends AppCompatActivity {
         if (showingGejala2==true){
             Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
             mtv_gejala2.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
-            params3.height = 1300;
+            params3.height = 1100;
             mline_gejala2.setLayoutParams(params3);
             showingGejala2= false;
         }else{

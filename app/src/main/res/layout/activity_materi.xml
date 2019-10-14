@@ -5,8 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#95837E7E"
+    android:background="@drawable/backdua"
     tools:context=".Menu.MateriActivity">
+    
+    <TextView
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/robotoe"
+        android:textColor="@color/White"
+        android:text="MATERI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </TextView>
+    <TextView
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/White"
+        android:text="(Pilihlah jenis materi yang ingin Anda baca)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,11 +45,11 @@
             <Button
                 android:id="@+id/anemia"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/side_materi"
-                android:textColor="#A81F1F"
-                android:fontFamily="monospace"
+                android:textColor="#FFF"
+                android:fontFamily="@font/roboto"
                 android:gravity="center"
                 android:text="ANEMIA"
                 android:textSize="20sp"
@@ -35,11 +58,11 @@
             <Button
                 android:id="@+id/gejala"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/side_materi"
-                android:textColor="#A81F1F"
-                android:fontFamily="monospace"
+                android:textColor="#FFF"
+                android:fontFamily="@font/roboto"
                 android:gravity="center"
                 android:text="Gejala"
                 android:textSize="20sp"
@@ -48,11 +71,11 @@
             <Button
                 android:id="@+id/penyebab"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/side_materi"
-                android:textColor="#A81F1F"
-                android:fontFamily="monospace"
+                android:textColor="#FFF"
+                android:fontFamily="@font/roboto"
                 android:gravity="center"
                 android:text="Penyebab"
                 android:textSize="20sp"
@@ -63,11 +86,11 @@
             <Button
                 android:id="@+id/komplikasi"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/side_materi"
-                android:textColor="#A81F1F"
-                android:fontFamily="monospace"
+                android:textColor="#FFF"
+                android:fontFamily="@font/roboto"
                 android:gravity="center"
                 android:text="KOMPLIKASI"
                 android:textSize="20sp"
@@ -76,11 +99,11 @@
             <Button
                 android:id="@+id/klasifikasi"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="55dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/side_materi"
-                android:textColor="#A81F1F"
-                android:fontFamily="monospace"
+                android:textColor="#FFF"
+                android:fontFamily="@font/roboto"
                 android:gravity="center"
                 android:text="KLASIFIKASI ANEMIA"
                 android:textSize="20sp"
@@ -89,11 +112,11 @@
             <Button
                 android:id="@+id/pemeriksaan"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/side_materi"
-                android:textColor="#A81F1F"
-                android:fontFamily="monospace"
+                android:textColor="#FFF"
+                android:fontFamily="@font/roboto"
                 android:gravity="center"
                 android:text="Pemeriksaan diagnosis "
                 android:textAlignment="center"
@@ -103,16 +126,32 @@
             <Button
                 android:id="@+id/pengobatan"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="55dp"
+                android:layout_marginBottom="15dp"
                 android:background="@drawable/side_materi"
-                android:textColor="#A81F1F"
-                android:fontFamily="monospace"
+                android:textColor="#FFF"
+                android:fontFamily="@font/roboto"
                 android:gravity="center"
                 android:text="PENGOBATAN"
                 android:textAlignment="center"
                 android:textSize="20sp"
                 android:textStyle="bold" />
+
+            <Button
+                android:defaultFocusHighlightEnabled="true"
+                android:id="@+id/pencegahan"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/side_materi"
+                android:textColor="#FFF"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="PENCEGAHAN"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
 
 
         </LinearLayout>

@@ -64,7 +64,7 @@ public class PenyebabActivity extends AppCompatActivity {
         if (showingPenyebab1==true){
             Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
             mtv_penyebab1.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
-            params3.height = 900;
+            params3.height = 600;
             mline_penyebab1.setLayoutParams(params3);
             showingPenyebab1= false;
         }else{
@@ -80,7 +80,7 @@ public class PenyebabActivity extends AppCompatActivity {
         if (showingPenyebab2==true){
             Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
             mtv_penyebab2.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
-            params3.height = 450;
+            params3.height = 420;
             mline_penyebab2.setLayoutParams(params3);
             showingPenyebab2= false;
         }else{

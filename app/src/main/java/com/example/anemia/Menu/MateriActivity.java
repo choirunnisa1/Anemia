@@ -12,12 +12,13 @@ import com.example.anemia.Materi.GejalaActivity;
 import com.example.anemia.Materi.JenisAnemiaActivity;
 import com.example.anemia.Materi.KomplikasiActivity;
 import com.example.anemia.Materi.PemeriksaanDiagActivity;
+import com.example.anemia.Materi.Pencegahan;
 import com.example.anemia.Materi.PengobatanActivity;
 import com.example.anemia.Materi.PenyebabActivity;
 import com.example.anemia.R;
 
 public class MateriActivity extends AppCompatActivity implements View.OnClickListener {
-    Button btn_anemia,btn_jenis,btn_komplikasi,btn_gejala,btn_pengobatan,btn_pemeriksaan, btn_penyebab;
+    Button btn_anemia,btn_jenis,btn_komplikasi,btn_gejala,btn_pengobatan,btn_pemeriksaan, btn_penyebab, btn_pencegahan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,9 @@ public class MateriActivity extends AppCompatActivity implements View.OnClickLis
 
         btn_pengobatan = findViewById(R.id.pengobatan);
         btn_pengobatan.setOnClickListener(this);
+
+        btn_pencegahan = findViewById(R.id.pencegahan);
+        btn_pencegahan.setOnClickListener(this);
     }
 
     @Override
@@ -76,6 +80,10 @@ public class MateriActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.pengobatan:
                 Intent pengobatanIntent = new Intent(MateriActivity.this, PengobatanActivity.class);
                 startActivity(pengobatanIntent);
+                break;
+            case R.id.pencegahan:
+                Intent pencegahanIntent = new Intent(MateriActivity.this, Pencegahan.class);
+                startActivity(pencegahanIntent);
                 break;
         }
     }

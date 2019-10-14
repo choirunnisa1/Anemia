@@ -8,7 +8,7 @@
     tools:context=".Materi.PemeriksaanDiagActivity">
     <TextView
         android:padding="10dp"
-        android:fontFamily="s"
+        android:fontFamily="@font/roboto"
         android:layout_margin="10dp"
         android:background="@drawable/side_more"
         android:textColor="@color/White"
@@ -32,7 +32,7 @@
             <com.codesgood.views.JustifiedTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="monospace"
+                android:fontFamily="@font/roboto"
                 android:layout_marginBottom="@dimen/activity_margin"
                 android:paddingLeft="@dimen/activity_margin"
                 android:paddingRight="@dimen/activity_margin"
@@ -47,21 +47,24 @@
                 android:orientation="vertical">
 
                 <TextView
+
+                    android:textStyle="bold"
+                    android:textColor="@color/White"
                     android:id="@+id/tv_diag1"
                     style="@style/subtitle"
                     android:background="@drawable/side_two"
                     android:drawableLeft="@drawable/atas"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:text=" - Pemeriksaan penyaring  "
+                    android:fontFamily="@font/roboto"
+                    android:text="  Pemeriksaan penyaring  "
                     android:textSize="14sp" />
 
                 <LinearLayout style="@style/subIsi">
 
                     <com.codesgood.views.JustifiedTextView
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/roboto"
                         android:text="Pemeriksaan penyaring untuk kasus anemia terdiri dari pengukuran kadar hemoglobin, indeks eritrosit dan hapusan darah tepi. Dari ini dapat dipastikan adanya anemia serta jenis morfologik anemia tersebut, yang sangat berguna untuk pengarahan diagnosis lebih lanjut"
                         android:textSize="14sp">
                     </com.codesgood.views.JustifiedTextView>
@@ -75,12 +78,14 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/White"
                     android:id="@+id/tv_diag2"
                     style="@style/subtitle"
                     android:background="@drawable/side_two"
                     android:drawableLeft="@drawable/atas"
-                    android:fontFamily="monospace"
-                    android:text=" - Pemeriksaan darah seri anemia "
+                    android:fontFamily="@font/roboto"
+                    android:text="  Pemeriksaan darah seri anemia "
                     android:textSize="14sp" />
 
                 <LinearLayout style="@style/subIsi">
@@ -89,7 +94,7 @@
                         android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/roboto"
                         android:text="Pemeriksaan darah seri anemia meliputi hitung leukosit, trombosit, hitung retikulosit dan laju endap darah. Sekarang sudah banyak dipakai automatic hematology analyzer yang dapat memberikan presisi hasil yang lebih baik."
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -102,12 +107,14 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/White"
                     android:id="@+id/tv_diag3"
                     style="@style/subtitle"
                     android:background="@drawable/side_two"
                     android:drawableLeft="@drawable/atas"
-                    android:fontFamily="monospace"
-                    android:text=" - Pemeriksaan sumsum tulang "
+                    android:fontFamily="@font/roboto"
+                    android:text="  Pemeriksaan sumsum tulang "
                     android:textSize="14sp" />
 
                 <LinearLayout style="@style/subIsi">
@@ -116,7 +123,7 @@
                         android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/roboto"
                         android:text="Pemeriksaan sumsum tulang memberikan informasi yang sangat berharga mengenai keadaan sistem hematopoesis. Pemeriksaan ini dibutuhkan untuk diagnosis definitif pada beberapa jenis anemia. Pemeriksaan sumsum tulang mutlak diperlukan untuk diagnosis anemia aplastik, anemia megaloblastik, serta pada kelainan hematologik yang dapat mensupresi sistem eritroid."
                         android:textSize="14sp">
                     </com.codesgood.views.JustifiedTextView>
@@ -129,12 +136,14 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/White"
                     android:id="@+id/tv_diag4"
                     style="@style/subtitle"
                     android:background="@drawable/side_two"
                     android:drawableLeft="@drawable/atas"
-                    android:fontFamily="monospace"
-                    android:text=" - Pemeriksaan khusus  "
+                    android:fontFamily="@font/roboto"
+                    android:text="  Pemeriksaan khusus  "
                     android:textSize="14sp" />
 
                 <LinearLayout style="@style/subIsi">
@@ -143,7 +152,7 @@
                         android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/roboto"
                         android:text="Pemeriksaan ini hanya dikerjakan atas indikasi khusus, misalnya pada: "
                         android:textSize="14sp">
                     </com.codesgood.views.JustifiedTextView>
@@ -151,7 +160,7 @@
                         android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/roboto"
                         android:text="a. Anemia defisiensi besi : serum iron. TIBC (total iron binding capacity), saturasi transferin, protoporfirin eritrosit, feritin serum, reseptor transferin dan pengecatan besi pada sumsum tulang (Perl’s stain)."
                         android:textSize="14sp">
                     </com.codesgood.views.JustifiedTextView>
@@ -162,7 +171,7 @@
                         android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/roboto"
                         android:text="b. Anemia megaloblastik : folat serum, vitamin B12 serum, tes supresi deoksiuridin dan tes Schiling."
                         android:textSize="14sp">
                     </com.codesgood.views.JustifiedTextView>
@@ -173,7 +182,7 @@
                         android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/roboto"
                         android:text="c. Anemia hemolitik : bilirubin serum, tes Coomb, elektroforesis hemoglobin dan lain-lain."
                         android:textSize="14sp">
                     </com.codesgood.views.JustifiedTextView>

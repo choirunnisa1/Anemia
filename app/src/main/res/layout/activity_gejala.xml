@@ -10,7 +10,7 @@
 
     <TextView
         android:padding="10dp"
-        android:fontFamily="s"
+        android:fontFamily="@font/roboto"
         android:layout_margin="10dp"
         android:background="@drawable/side_more"
         android:textColor="@color/White"
@@ -33,8 +33,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#000"
-                android:fontFamily="monospace"
-                android:textSize="18sp"
+                android:fontFamily="@font/roboto"
+                android:textSize="14sp"
                 android:text="@string/gejala1"/>
             <LinearLayout
                 android:orientation="vertical"
@@ -42,21 +42,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
                 <TextView
-                    android:fontFamily="monospace"
-                    android:textSize="18sp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="14sp"
+                    android:textColor="@color/White"
                     android:id="@+id/tv_gejala1"
                     style="@style/subtitle"
                     android:drawableLeft="@drawable/atas"
                     android:background="@drawable/side_two"
-                    android:text=" Gejala umum anemia"/>
+                    android:text="  Gejala umum anemia"/>
                 <LinearLayout
                     style="@style/subIsi">
                     <com.codesgood.views.JustifiedTextView
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="18sp"
-                        android:fontFamily="monospace"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto"
                         android:text="Rasa lemah, lesu, cepat lelah, telinga mendenging (tinnitus), mata berkunang-kunang, kaki terasa dingin, sesak nafas dan dispepsia. Pada pemeriksaan, penderita tampak pucat, yang mudah dilihat pada konyungtiva, mukosa mulut, telapak tangan dan jaringan di bawah kuku"/>
                 </LinearLayout>
             </LinearLayout>
@@ -66,17 +67,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
                 <TextView
-                    android:fontFamily="monospace"
-                    android:textSize="18sp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="14sp"
+                    android:textColor="@color/White"
                     android:id="@+id/tv_gejala2"
                     style="@style/subtitle"
                     android:drawableLeft="@drawable/atas"
                     android:background="@drawable/side_two"
-                    android:text=" Gejala khas masing-masing anemia"/>
+                    android:text="  Gejala khas masing-masing anemia"/>
                 <LinearLayout
                     style="@style/subIsi">
                     <com.codesgood.views.JustifiedTextView
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/roboto"
                         android:textSize="14sp"
                         android:textColor="#000"
                         android:layout_width="match_parent"
@@ -88,8 +90,8 @@
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
                         android:textColor="#000"
-                        android:fontFamily="monospace"
-                        android:textSize="18sp"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="14sp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="b. Anemia megaloblastik: glossitis (peradangan atau infeksi lidah menyebabkan lidah membengkak), gangguan neurologik pada defisiensi vitamin B12 seperti parastesi tangan dan kaki, kehilangan memori selanjutnya jika keadaan memberat dapat mempengaruhi gaya berjalan, kebutaan akibat atropi N.Optikus dan gangguan kejiwaan"/>
@@ -98,8 +100,8 @@
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
                         android:textColor="#000"
-                        android:fontFamily="monospace"
-                        android:textSize="18sp"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="14sp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="c. Anemia hemolitik: kedinginan, urin berwarna gelap, pembesaran limpa, kelelahan, demam, warna kulit pucat, denyut jantung cepat, sesak nafas, warna kulit kuning"/>
@@ -108,8 +110,8 @@
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
                         android:textColor="#000"
-                        android:textSize="18sp"
-                        android:fontFamily="monospace"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="d. Anemia aplastik: kelelahan, pucat, detak jantung cepat, sesak nafas dengan olahraga, kelemahan, pendarahan gusi, mudah memar, hidung berdarah"/>
@@ -121,19 +123,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
                 <TextView
-                    android:fontFamily="monospace"
-                    android:textSize="18sp"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="14sp"
+                    android:textColor="@color/White"
                     android:id="@+id/tv_gejala3"
                     style="@style/subtitle"
                     android:drawableLeft="@drawable/atas"
                     android:background="@drawable/side_two"
-                    android:text=" Gejala penyakit dasar"/>
+                    android:text="  Gejala penyakit dasar"/>
                 <LinearLayout
                     style="@style/subIsi">
                     <com.codesgood.views.JustifiedTextView
                         android:textColor="#000"
                         android:textSize="14sp"
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/roboto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Gejala yang timbul akibat penyakit dasar yang menyebabkan anemia sangat bervariasi tergantung dari penyebab anemia tersebut. Misalnya gejala akibat infeksi cacing tambang: sakit perut, pembengkakan parotis dan warna kuning pada telapak tangan. Pada kasus tertentu sering gejala penyakit dasar lebih mendominir, seperti misalnya pada anemia akibat penyakit kronik oleh karena arthritis rematoid."/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#FF8A80</color>
-    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorPrimaryDark">#F05540</color>
     <color name="colorAccent">#40C4FF</color>
     <color name="White">#ffff</color>
     <color name="transparant">#00CCCCCC</color>
@@ -25,4 +25,10 @@
     <color name="fbutton_color_silver">#bdc3c7</color>
     <color name="fbutton_color_concrete">#95a5a6</color>
     <color name="fbutton_color_asbestos">#7f8c8d</color>
+    <color name="purple_500">#9c27b0</color>
+    <color name="deep_purple_500">#673ab7</color>
+    <color name="indigo_500">#3f51b5</color>
+    <color name="blue_500">#2196f3</color>
+    <color name="cyan_500">#00bcd4</color>
+    <color name="light_blue_500">#03a9f4</color>
 </resources>

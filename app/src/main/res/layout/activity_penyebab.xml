@@ -5,11 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#7CBBB8B8"
     tools:context=".Materi.PenyebabActivity">
     <TextView
         android:padding="10dp"
-        android:fontFamily="s"
+        android:fontFamily="@font/roboto"
         android:layout_margin="10dp"
         android:background="@drawable/side_more"
         android:textColor="@color/White"
@@ -30,19 +29,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <com.codesgood.views.JustifiedTextView
-                android:padding="@dimen/activity_margin"
+                android:textColor="#000"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#000"
-                android:fontFamily="monospace"
-                android:textSize="15sp"
+                android:fontFamily="@font/roboto"
+                android:textSize="14sp"
                 android:text="@string/penyebabutama"/>
             <TextView
                 android:paddingLeft="16dp"
                 android:paddingRight="@dimen/activity_margin"
                 android:paddingBottom="5dp"
-                android:fontFamily="monospace"
-                android:textSize="15sp"
+                android:fontFamily="@font/roboto"
+                android:textSize="14sp"
                 android:textColor="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -53,13 +54,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
                 <TextView
-                    android:fontFamily="monospace"
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
                     android:textSize="14sp"
                     android:id="@+id/tv_penyebab1"
                     style="@style/subtitle"
                     android:drawableLeft="@drawable/atas"
                     android:background="@drawable/side_two"
-                    android:text=" 1. Defisiensi zat gizi "/>
+                    android:text="  1. Defisiensi zat gizi "/>
                 <LinearLayout
                     style="@style/subIsi">
                     <com.codesgood.views.JustifiedTextView
@@ -67,7 +70,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/roboto"
                         android:text=" - Rendahnya asupan zat gizi baik hewani dan nabati yang merupakan pangan sumber zat besi yang berperan penting untuk pembuatan hemoglobin sebagai komponen dari sel darah merah/eritrosit. Zat gizi lain yang berperan penting dalam pembuatan hemoglobin antara lain asam folat dan vitamin B12.">
                     </com.codesgood.views.JustifiedTextView>
                     <TextView
@@ -78,7 +81,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/roboto"
                         android:text=" - Pada penderita penyakit infeksi kronis seperti TBC, HIV/AIDS, dan keganasan seringkali disertai anemia, karena kekurangan asupan zat gizi atau akibat dari infeksi itu sendiri.  "/>
                </LinearLayout>
             </LinearLayout>
@@ -88,17 +91,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
                 <TextView
-                    android:fontFamily="monospace"
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
                     android:textSize="14sp"
                     android:id="@+id/tv_penyebab2"
                     style="@style/subtitle"
                     android:drawableLeft="@drawable/atas"
                     android:background="@drawable/side_two"
-                    android:text=" 2. Perdarahan (Loss of blood volume) "/>
+                    android:text="   2. Perdarahan (Loss of blood volume) "/>
                 <LinearLayout
                     style="@style/subIsi">
                     <com.codesgood.views.JustifiedTextView
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/roboto"
                         android:textSize="14sp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -109,7 +114,7 @@
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
                         android:textColor="#000"
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/roboto"
                         android:textSize="14sp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -122,19 +127,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp">
                 <TextView
-                    android:fontFamily="monospace"
+                    android:textColor="@color/White"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto"
                     android:textSize="14sp"
                     android:id="@+id/tv_penyebab3"
                     style="@style/subtitle"
                     android:drawableLeft="@drawable/atas"
                     android:background="@drawable/side_two"
-                    android:text=" 3.	Hemolitik "/>
+                    android:text="   3.	Hemolitik "/>
                 <LinearLayout
                     style="@style/subIsi">
                     <com.codesgood.views.JustifiedTextView
-                        android:textColor="@color/White"
+                        android:textColor="#000"
                         android:textSize="14sp"
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/roboto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="- Perdarahan pada penderita malaria kronis perlu diwaspadai karena terjadi hemolitik yang mengakibatkan penumpukan zat besi (hemosiderosis) di organ tubuh, seperti hati dan limpa. ">
@@ -143,7 +150,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
                     <com.codesgood.views.JustifiedTextView
-                        android:fontFamily="monospace"
+                        android:fontFamily="@font/roboto"
                         android:textColor="#000"
                         android:textSize="14sp"
                         android:layout_width="match_parent"
