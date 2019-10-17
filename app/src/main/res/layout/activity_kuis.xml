@@ -7,22 +7,34 @@
     android:layout_height="match_parent"
     tools:context=".Menu.KuisActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp">
 
-
-        <TextView
-            android:padding="10dp"
-            android:layout_gravity="center_horizontal"
-            android:textStyle="bold"
-            android:background="@drawable/back_no"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/roboto"
-            android:textColor="@color/White"
-            android:textAlignment="center"
-            android:id="@+id/time"
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1">
-        </TextView>
+            android:layout_alignParentRight="true"
+            android:gravity="left"
+            android:onClick="toHome"
+            app:srcCompat="@drawable/ic_cancel"></ImageView>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/time"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:background="@drawable/back_no"
+            android:fontFamily="@font/roboto"
+            android:padding="10dp"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
 
 
     <LinearLayout
@@ -134,16 +146,5 @@
         </Button>
     </LinearLayout>
     </LinearLayout>
-<!--    <Button-->
-<!--        android:id="@+id/submit"-->
-<!--        android:layout_marginTop="20dp"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="end"-->
-<!--        android:shadowColor="@color/fbutton_color_pomegranate"-->
-<!--        android:background="#EDEE8823"-->
-<!--        android:pointerIcon="arrow"-->
-<!--        android:textColor="#fff"-->
-<!--        android:text="Submit" />-->
 
 </LinearLayout>

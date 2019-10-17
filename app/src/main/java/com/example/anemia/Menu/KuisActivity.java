@@ -1,28 +1,20 @@
 package com.example.anemia.Menu;
 
-import android.animation.ObjectAnimator;
 import android.app.Dialog;
 import android.content.Intent;
-import android.content.res.ColorStateList;
 import android.graphics.Color;
-import android.graphics.Point;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Display;
 import android.view.View;
-import android.view.animation.DecelerateInterpolator;
 import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.ProgressBar;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.anemia.DataSoal;
+import com.example.anemia.MainActivity;
 import com.example.anemia.R;
 import com.example.anemia.SkorActivity;
 
@@ -41,8 +33,8 @@ public class KuisActivity extends AppCompatActivity {
     ArrayList<Integer> randomSoal;
     int indexKuis;
     Dialog notifDialog;
-//    Button btn_benar,btn_salah,btn_timeout;
-//    TextView title_tv, message_tv;
+    Button btn_benar, btn_salah, btn_timeout;
+    TextView title_tv, message_tv;
 
     private static final long COUNTDOWN_IN_MILLIS = 15000;
     private long timeLeftInMillis;
@@ -72,35 +64,9 @@ public class KuisActivity extends AppCompatActivity {
 
     }
 
-    private void startCountDown() {
-        countDownTimer = new CountDownTimer(timeLeftInMillis, 1000) {
-            @Override
-            public void onTick(long millisUntilFinished) {
-                timeLeftInMillis = millisUntilFinished;
-                updateCountDownText();
-            }
-
-            @Override
-            public void onFinish() {
-                endQuis();
-                Toast.makeText(getApplicationContext(), "Time Out", Toast.LENGTH_SHORT).show();
-                salah();
-                updateCountDownText();
-                updateSoal();
-            }
-        }.start();
+    public void endQuis() {
+        indexKuis = indexKuis + 1;
     }
-
-    private void updateCountDownText() {
-        int minutes = (int) (timeLeftInMillis / 1000) / 60;
-        int seconds = (int) (timeLeftInMillis / 1000) % 60;
-
-        String timeFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
-
-        tv_time.setText(timeFormatted);
-    }
-
-
 
 
     public void lcm() {
@@ -113,8 +79,8 @@ public class KuisActivity extends AppCompatActivity {
         int[] Xn = new int[n];
 
         Random b = new Random();
-        Xn0 = b.nextInt(m - 1) + 1;
-        Log.d("Xn0 = ",String.valueOf(Xn0));
+        Xn0 = b.nextInt(10 - 1) + 1;
+        Log.d("Xn0 = ", String.valueOf(Xn0));
 
         for (i = 1; i <= 11; i++) {
 
@@ -127,7 +93,8 @@ public class KuisActivity extends AppCompatActivity {
                 break;
             }
 
-            if (Xn[i] == 0) Xn[i] = 1; randomSoal.add(Xn[i]);
+            if (Xn[i] == 0) Xn[i] = 1;
+            randomSoal.add(Xn[i]);
         }
 
         updateSoal();
@@ -136,20 +103,19 @@ public class KuisActivity extends AppCompatActivity {
     }
 
 
-    public void cekJawaban(){
+    public void cekJawaban() {
         optiona.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 countDownTimer.cancel();
                 endQuis();
-                    if (optiona.getText() == jawaban) {
-                      benar();
-                    } else {
-                        Toast.makeText(getApplicationContext(), "Anda salah", Toast.LENGTH_SHORT).show();
-                  salah();
-                        updateSoal();
-                    }
+                if (optiona.getText() == jawaban) {
+                    BenarPopUp();
+                } else {
+                    SalahPopUp();
+
                 }
+            }
         });
 
         optionb.setOnClickListener(new View.OnClickListener() {
@@ -158,12 +124,11 @@ public class KuisActivity extends AppCompatActivity {
                 countDownTimer.cancel();
                 endQuis();
 
-                if (optionb.getText()==jawaban){
-                   benar();
-                }else{
-                    Toast.makeText(getApplicationContext(), "Anda salah", Toast.LENGTH_SHORT).show();
-                  salah();
-                  updateSoal();
+                if (optionb.getText() == jawaban) {
+                    BenarPopUp();
+                } else {
+                    SalahPopUp();
+
                 }
             }
         });
@@ -173,12 +138,11 @@ public class KuisActivity extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 endQuis();
-                if (optionc.getText()==jawaban){
-                   benar();
-                }else{
-                    Toast.makeText(getApplicationContext(), "Anda salah", Toast.LENGTH_SHORT).show();
-                  salah();
-                    updateSoal();
+                if (optionc.getText() == jawaban) {
+                    BenarPopUp();
+                } else {
+                    SalahPopUp();
+
                 }
             }
         });
@@ -188,18 +152,16 @@ public class KuisActivity extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 endQuis();
-                if (optiond.getText()==jawaban){
-                   benar();
-                }else{
-                    Toast.makeText(getApplicationContext(), "Anda salah", Toast.LENGTH_SHORT).show();
-                    salah();
-                    updateSoal();
+                if (optiond.getText() == jawaban) {
+                    BenarPopUp();
+                } else {
+                    SalahPopUp();
+
                 }
             }
         });
 
     }
-
 
 
     public void updateSoal() {
@@ -221,73 +183,95 @@ public class KuisActivity extends AppCompatActivity {
             startCountDown();
         }
     }
-//
 
-    public void benar() {
+    public void BenarPopUp() {
         benar = benar + 1;
-        Toast.makeText(getApplicationContext(), "Anda benar", Toast.LENGTH_SHORT).show();
-        updateSoal();
+        notifDialog.setContentView(R.layout.pop_benar_layout);
+        btn_benar = notifDialog.findViewById(R.id.button_benar);
+        title_tv = notifDialog.findViewById(R.id.title_benar);
+        message_tv = notifDialog.findViewById(R.id.message_benar);
+
+        btn_benar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                notifDialog.dismiss();
+                updateSoal();
+            }
+        });
+
+        notifDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        notifDialog.show();
     }
 
-    public void endQuis() {
-        indexKuis = indexKuis + 1;
-    }
-
-    public void salah() {
+    public void SalahPopUp() {
         benar = benar + 0;
+        notifDialog.setContentView(R.layout.pop_salah_layout);
+        btn_salah = notifDialog.findViewById(R.id.button_salah);
+        title_tv = notifDialog.findViewById(R.id.title_salah);
+        message_tv = notifDialog.findViewById(R.id.message_salah);
+
+        btn_salah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                notifDialog.dismiss();
+                updateSoal();
+            }
+        });
+
+        notifDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        notifDialog.show();
     }
-//   public void BenarPopUp(){
-//       benar = benar + 1;
-//       notifDialog.setContentView(R.layout.pop_benar_layout);
-//       btn_benar = notifDialog.findViewById(R.id.button_benar);
-//       title_tv = notifDialog.findViewById(R.id.title_benar);
-//       message_tv = notifDialog.findViewById(R.id.message_benar);
-//
-//        btn_benar.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                notifDialog.dismiss();
-//            }
-//        });
-//
-//    notifDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-//    notifDialog.show();
-//   }
-//
-//    public void SalahPopUp(){
-//        benar = benar + 0;
-//        notifDialog.setContentView(R.layout.pop_salah_layout);
-//        btn_salah = notifDialog.findViewById(R.id.button_salah);
-//        title_tv = notifDialog.findViewById(R.id.title_salah);
-//        message_tv = notifDialog.findViewById(R.id.message_salah);
-//
-//        btn_salah.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                notifDialog.dismiss();
-//            }
-//        });
-//
-//        notifDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-//        notifDialog.show();
-//    }
-//    public void TimeoutPopUp(){
-//        benar = benar + 0;
-//        notifDialog.setContentView(R.layout.timeout_layout);
-//        btn_timeout = notifDialog.findViewById(R.id.button_timeout);
-//        title_tv = notifDialog.findViewById(R.id.title_timeout);
-//        message_tv = notifDialog.findViewById(R.id.message_timeout);
-//
-//        btn_timeout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                notifDialog.dismiss();
-//            }
-//        });
-//
-//        notifDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-//        notifDialog.show();
-//    }
+
+    public void TimeoutPopUp() {
+        benar = benar + 0;
+        notifDialog.setContentView(R.layout.timeout_layout);
+        btn_timeout = notifDialog.findViewById(R.id.button_timeout);
+        title_tv = notifDialog.findViewById(R.id.title_timeout);
+        message_tv = notifDialog.findViewById(R.id.message_timeout);
+
+        btn_timeout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                notifDialog.dismiss();
+                updateSoal();
+            }
+        });
+
+        notifDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        notifDialog.show();
+    }
+
+    private void startCountDown() {
+        countDownTimer = new CountDownTimer(timeLeftInMillis, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                timeLeftInMillis = millisUntilFinished;
+                updateCountDownText();
+            }
+
+            @Override
+            public void onFinish() {
+                endQuis();
+                TimeoutPopUp();
+            }
+        }.start();
+    }
+
+    private void updateCountDownText() {
+        int minutes = (int) (timeLeftInMillis / 1000) / 60;
+        int seconds = (int) (timeLeftInMillis / 1000) % 60;
+
+        String timeFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
+
+        tv_time.setText(timeFormatted);
+    }
+
+    public void toHome(View view) {
+        Intent closeIntent = new Intent(KuisActivity.this, MainActivity.class);
+        startActivity(closeIntent);
+
+    }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -300,7 +284,6 @@ public class KuisActivity extends AppCompatActivity {
     public void onBackPressed() {
         Toast.makeText(getApplicationContext(), "Tidak bisa kembali ke kuis. Silahkan selesaikan terlebih dahulu", Toast.LENGTH_SHORT).show();
     }
-
 
 
 }
