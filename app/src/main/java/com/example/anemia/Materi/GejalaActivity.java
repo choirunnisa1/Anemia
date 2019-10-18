@@ -53,13 +53,13 @@ public class GejalaActivity extends AppCompatActivity {
     private void lays(){
         ViewGroup.LayoutParams params3 = mline_gejala1.getLayoutParams();
         if (showingGejala1==true){
-            Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
+            Drawable draw2 = getResources().getDrawable(R.drawable.atas);
             mtv_gejala1.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
             params3.height = 400;
             mline_gejala1.setLayoutParams(params3);
             showingGejala1= false;
         }else{
-            Drawable draw = getResources().getDrawable(R.drawable.atas);
+            Drawable draw = getResources().getDrawable(R.drawable.bawah);
             mtv_gejala1.setCompoundDrawablesWithIntrinsicBounds(draw, null, null, null);
             params3.height = 110;
             mline_gejala1.setLayoutParams(params3);
@@ -69,13 +69,13 @@ public class GejalaActivity extends AppCompatActivity {
     private void layr(){
         ViewGroup.LayoutParams params3 = mline_gejala2.getLayoutParams();
         if (showingGejala2==true){
-            Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
+            Drawable draw2 = getResources().getDrawable(R.drawable.atas);
             mtv_gejala2.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
             params3.height = 1100;
             mline_gejala2.setLayoutParams(params3);
             showingGejala2= false;
         }else{
-            Drawable draw = getResources().getDrawable(R.drawable.atas);
+            Drawable draw = getResources().getDrawable(R.drawable.bawah);
             mtv_gejala2.setCompoundDrawablesWithIntrinsicBounds(draw, null, null, null);
             params3.height = 110;
             mline_gejala2.setLayoutParams(params3);
@@ -85,13 +85,13 @@ public class GejalaActivity extends AppCompatActivity {
     private void layc(){
         ViewGroup.LayoutParams params3 = mline_gejala3.getLayoutParams();
         if (showingGejala3==true){
-            Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
+            Drawable draw2 = getResources().getDrawable(R.drawable.atas);
             mtv_gejala3.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
             params3.height = 600;
             mline_gejala3.setLayoutParams(params3);
             showingGejala3= false;
         }else{
-            Drawable draw = getResources().getDrawable(R.drawable.atas);
+            Drawable draw = getResources().getDrawable(R.drawable.bawah);
             mtv_gejala3.setCompoundDrawablesWithIntrinsicBounds(draw, null, null, null);
             params3.height = 110;
             mline_gejala3.setLayoutParams(params3);

@@ -66,13 +66,13 @@ public class PemeriksaanDiagActivity extends AppCompatActivity {
     private void diags(){
         ViewGroup.LayoutParams params3 = mline_diag1.getLayoutParams();
         if (showingDiag1==true){
-            Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
+            Drawable draw2 = getResources().getDrawable(R.drawable.atas);
             mtv_diag1.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
             params3.height = 450;
             mline_diag1.setLayoutParams(params3);
             showingDiag1= false;
         }else{
-            Drawable draw = getResources().getDrawable(R.drawable.atas);
+            Drawable draw = getResources().getDrawable(R.drawable.bawah);
             mtv_diag1.setCompoundDrawablesWithIntrinsicBounds(draw, null, null, null);
             params3.height = 110;
             mline_diag1.setLayoutParams(params3);
@@ -82,13 +82,13 @@ public class PemeriksaanDiagActivity extends AppCompatActivity {
     private void diagr(){
         ViewGroup.LayoutParams params3 = mline_diag2.getLayoutParams();
         if (showingDiag2==true){
-            Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
+            Drawable draw2 = getResources().getDrawable(R.drawable.atas);
             mtv_diag2.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
             params3.height = 450;
             mline_diag2.setLayoutParams(params3);
             showingDiag2= false;
         }else{
-            Drawable draw = getResources().getDrawable(R.drawable.atas);
+            Drawable draw = getResources().getDrawable(R.drawable.bawah);
             mtv_diag2.setCompoundDrawablesWithIntrinsicBounds(draw, null, null, null);
             params3.height = 110;
             mline_diag2.setLayoutParams(params3);
@@ -98,13 +98,13 @@ public class PemeriksaanDiagActivity extends AppCompatActivity {
     private void diagk(){
         ViewGroup.LayoutParams params3 = mline_diag3.getLayoutParams();
         if (showingDiag3==true){
-            Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
+            Drawable draw2 = getResources().getDrawable(R.drawable.atas);
             mtv_diag3.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
             params3.height = 600;
             mline_diag3.setLayoutParams(params3);
             showingDiag3= false;
         }else{
-            Drawable draw = getResources().getDrawable(R.drawable.atas);
+            Drawable draw = getResources().getDrawable(R.drawable.bawah);
             mtv_diag3.setCompoundDrawablesWithIntrinsicBounds(draw, null, null, null);
             params3.height = 110;
             mline_diag3.setLayoutParams(params3);
@@ -114,13 +114,13 @@ public class PemeriksaanDiagActivity extends AppCompatActivity {
     private void diagl(){
         ViewGroup.LayoutParams params3 = mline_diag4.getLayoutParams();
         if (showingDiag4==true){
-            Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
+            Drawable draw2 = getResources().getDrawable(R.drawable.atas);
             mtv_diag4.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
             params3.height = 800;
             mline_diag4.setLayoutParams(params3);
             showingDiag4= false;
         }else{
-            Drawable draw = getResources().getDrawable(R.drawable.atas);
+            Drawable draw = getResources().getDrawable(R.drawable.bawah);
             mtv_diag4.setCompoundDrawablesWithIntrinsicBounds(draw, null, null, null);
             params3.height = 110;
             mline_diag4.setLayoutParams(params3);

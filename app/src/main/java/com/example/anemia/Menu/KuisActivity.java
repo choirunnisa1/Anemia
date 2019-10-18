@@ -267,6 +267,7 @@ public class KuisActivity extends AppCompatActivity {
     }
 
     public void toHome(View view) {
+        onDestroy();
         Intent closeIntent = new Intent(KuisActivity.this, MainActivity.class);
         startActivity(closeIntent);
 

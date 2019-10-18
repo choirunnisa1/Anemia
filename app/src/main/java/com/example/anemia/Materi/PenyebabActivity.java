@@ -62,13 +62,13 @@ public class PenyebabActivity extends AppCompatActivity {
     private void pens(){
         ViewGroup.LayoutParams params3 = mline_penyebab1.getLayoutParams();
         if (showingPenyebab1==true){
-            Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
+            Drawable draw2 = getResources().getDrawable(R.drawable.atas);
             mtv_penyebab1.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
             params3.height = 600;
             mline_penyebab1.setLayoutParams(params3);
             showingPenyebab1= false;
         }else{
-            Drawable draw = getResources().getDrawable(R.drawable.atas);
+            Drawable draw = getResources().getDrawable(R.drawable.bawah);
             mtv_penyebab1.setCompoundDrawablesWithIntrinsicBounds(draw, null, null, null);
             params3.height = 110;
             mline_penyebab1.setLayoutParams(params3);
@@ -78,13 +78,13 @@ public class PenyebabActivity extends AppCompatActivity {
     private void penr(){
         ViewGroup.LayoutParams params3 = mline_penyebab2.getLayoutParams();
         if (showingPenyebab2==true){
-            Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
+            Drawable draw2 = getResources().getDrawable(R.drawable.atas);
             mtv_penyebab2.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
             params3.height = 420;
             mline_penyebab2.setLayoutParams(params3);
             showingPenyebab2= false;
         }else{
-            Drawable draw = getResources().getDrawable(R.drawable.atas);
+            Drawable draw = getResources().getDrawable(R.drawable.bawah);
             mtv_penyebab2.setCompoundDrawablesWithIntrinsicBounds(draw, null, null, null);
             params3.height = 110;
             mline_penyebab2.setLayoutParams(params3);
@@ -94,13 +94,13 @@ public class PenyebabActivity extends AppCompatActivity {
     private void penc(){
         ViewGroup.LayoutParams params3 = mline_penyebab3.getLayoutParams();
         if (showingPenyebab3==true){
-            Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
+            Drawable draw2 = getResources().getDrawable(R.drawable.atas);
             mtv_penyebab3.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
             params3.height = 600;
             mline_penyebab3.setLayoutParams(params3);
             showingPenyebab3= false;
         }else{
-            Drawable draw = getResources().getDrawable(R.drawable.atas);
+            Drawable draw = getResources().getDrawable(R.drawable.bawah);
             mtv_penyebab3.setCompoundDrawablesWithIntrinsicBounds(draw, null, null, null);
             params3.height = 110;
             mline_penyebab3.setLayoutParams(params3);

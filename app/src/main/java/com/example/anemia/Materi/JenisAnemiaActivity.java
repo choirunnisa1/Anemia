@@ -76,13 +76,13 @@ public class JenisAnemiaActivity extends AppCompatActivity {
     private void layd(){
         ViewGroup.LayoutParams params3 = mline_jenis4.getLayoutParams();
         if (showingjenis4==true){
-            Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
+            Drawable draw2 = getResources().getDrawable(R.drawable.atas);
             mtv_jenis4.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
             params3.height = 600;
             mline_jenis4.setLayoutParams(params3);
             showingjenis4= false;
         }else{
-            Drawable draw = getResources().getDrawable(R.drawable.atas);
+            Drawable draw = getResources().getDrawable(R.drawable.bawah);
             mtv_jenis4.setCompoundDrawablesWithIntrinsicBounds(draw, null, null, null);
             params3.height = 110;
             mline_jenis4.setLayoutParams(params3);
@@ -92,13 +92,13 @@ public class JenisAnemiaActivity extends AppCompatActivity {
     private void laye(){
         ViewGroup.LayoutParams params3 = mline_jenis5.getLayoutParams();
         if (showingjenis5==true){
-            Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
+            Drawable draw2 = getResources().getDrawable(R.drawable.atas);
             mtv_jenis5.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
             params3.height = 700;
             mline_jenis5.setLayoutParams(params3);
             showingjenis5= false;
         }else{
-            Drawable draw = getResources().getDrawable(R.drawable.atas);
+            Drawable draw = getResources().getDrawable(R.drawable.bawah);
             mtv_jenis5.setCompoundDrawablesWithIntrinsicBounds(draw, null, null, null);
             params3.height = 110;
             mline_jenis5.setLayoutParams(params3);
@@ -108,13 +108,13 @@ public class JenisAnemiaActivity extends AppCompatActivity {
     private void lays(){
         ViewGroup.LayoutParams params3 = mline_jenis1.getLayoutParams();
         if (showingjenis1==true){
-            Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
+            Drawable draw2 = getResources().getDrawable(R.drawable.atas);
             mtv_jenis1.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
             params3.height = 500;
             mline_jenis1.setLayoutParams(params3);
             showingjenis1= false;
         }else{
-            Drawable draw = getResources().getDrawable(R.drawable.atas);
+            Drawable draw = getResources().getDrawable(R.drawable.bawah);
             mtv_jenis1.setCompoundDrawablesWithIntrinsicBounds(draw, null, null, null);
             params3.height = 110;
             mline_jenis1.setLayoutParams(params3);
@@ -124,13 +124,13 @@ public class JenisAnemiaActivity extends AppCompatActivity {
     private void layr(){
         ViewGroup.LayoutParams params3 = mline_jenis2.getLayoutParams();
         if (showingjenis2==true){
-            Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
+            Drawable draw2 = getResources().getDrawable(R.drawable.atas);
             mtv_jenis2.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
             params3.height = 1000;
             mline_jenis2.setLayoutParams(params3);
             showingjenis2= false;
         }else{
-            Drawable draw = getResources().getDrawable(R.drawable.atas);
+            Drawable draw = getResources().getDrawable(R.drawable.bawah);
             mtv_jenis2.setCompoundDrawablesWithIntrinsicBounds(draw, null, null, null);
             params3.height = 110;
             mline_jenis2.setLayoutParams(params3);
@@ -140,13 +140,13 @@ public class JenisAnemiaActivity extends AppCompatActivity {
     private void layc(){
         ViewGroup.LayoutParams params3 = mline_jenis3.getLayoutParams();
         if (showingjenis3==true){
-            Drawable draw2 = getResources().getDrawable(R.drawable.bawah);
+            Drawable draw2 = getResources().getDrawable(R.drawable.atas);
             mtv_jenis3.setCompoundDrawablesWithIntrinsicBounds(draw2, null, null, null);
             params3.height = 800;
             mline_jenis3.setLayoutParams(params3);
             showingjenis3= false;
         }else{
-            Drawable draw = getResources().getDrawable(R.drawable.atas);
+            Drawable draw = getResources().getDrawable(R.drawable.bawah);
             mtv_jenis3.setCompoundDrawablesWithIntrinsicBounds(draw, null, null, null);
             params3.height = 110;
             mline_jenis3.setLayoutParams(params3);
