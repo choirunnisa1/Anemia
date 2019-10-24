@@ -53,7 +53,7 @@
                     android:id="@+id/tv_diag1"
                     style="@style/subtitle"
                     android:background="@drawable/side_two"
-                    android:drawableLeft="@drawable/atas"
+                    android:drawableLeft="@drawable/bawah"
                     android:fontFamily="@font/roboto"
                     android:text="  Pemeriksaan penyaring  "
                     android:textSize="14sp" />
@@ -83,7 +83,7 @@
                     android:id="@+id/tv_diag2"
                     style="@style/subtitle"
                     android:background="@drawable/side_two"
-                    android:drawableLeft="@drawable/atas"
+                    android:drawableLeft="@drawable/bawah"
                     android:fontFamily="@font/roboto"
                     android:text="  Pemeriksaan darah seri anemia "
                     android:textSize="14sp" />
@@ -112,7 +112,7 @@
                     android:id="@+id/tv_diag3"
                     style="@style/subtitle"
                     android:background="@drawable/side_two"
-                    android:drawableLeft="@drawable/atas"
+                    android:drawableLeft="@drawable/bawah"
                     android:fontFamily="@font/roboto"
                     android:text="  Pemeriksaan sumsum tulang "
                     android:textSize="14sp" />
@@ -141,7 +141,7 @@
                     android:id="@+id/tv_diag4"
                     style="@style/subtitle"
                     android:background="@drawable/side_two"
-                    android:drawableLeft="@drawable/atas"
+                    android:drawableLeft="@drawable/bawah"
                     android:fontFamily="@font/roboto"
                     android:text="  Pemeriksaan khusus  "
                     android:textSize="14sp" />
@@ -153,7 +153,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/roboto"
-                        android:text="Pemeriksaan ini hanya dikerjakan atas indikasi khusus, misalnya pada: "
+                        android:text="Pemeriksaan ini hanya dikerjakan bawah indikasi khusus, misalnya pada: "
                         android:textSize="14sp">
                     </com.codesgood.views.JustifiedTextView>
                     <com.codesgood.views.JustifiedTextView

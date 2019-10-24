@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/fbutton_color_wet_asphalt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/title_mulai"
+                android:textColor="@color/White"
+                android:fontFamily="@font/roboto"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:text="Selamat datang di kuis Mobilia">
+            </TextView>
+
+            <TextView
+                android:id="@+id/t_mulai"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:textSize="14sp"
+                android:text="Kuis ini terdiri dari dari 10 soal pilihan ganda\nDengan waktu tiap soal adalah 15 detik\nAnda dapat menjawab dengan menekan salah satu opsi jawaban kemudian akan muncul pop up yang menyatakan jawaban anda benar/salah\nSetelah itu tekan tombol lanjut untuk soal berikutnya dan tekan tombol close di pojok kanan atas untuk keluar dari halaman kuis menuju ke menu utama"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/button_mulai"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/White"
+                android:background="@drawable/button_salah"
+                android:text="mulai kuis"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto">
+            </Button>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

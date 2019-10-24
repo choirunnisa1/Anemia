@@ -1,11 +1,13 @@
 package com.example.anemia.Menu;
 
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -33,7 +35,7 @@ public class KuisActivity extends AppCompatActivity {
     ArrayList<Integer> randomSoal;
     int indexKuis;
     Dialog notifDialog;
-    Button btn_benar, btn_salah, btn_timeout;
+    Button btn_benar, btn_salah, btn_timeout,btn_mulai;
     TextView title_tv, message_tv;
 
     private static final long COUNTDOWN_IN_MILLIS = 15000;
@@ -59,8 +61,7 @@ public class KuisActivity extends AppCompatActivity {
 
         dataSoal = new DataSoal();
 
-        lcm();
-        cekJawaban();
+        MulaiKuis();
 
     }
 
@@ -80,7 +81,7 @@ public class KuisActivity extends AppCompatActivity {
 
         Random b = new Random();
         Xn0 = b.nextInt(10 - 1) + 1;
-        Log.d("Xn0 = ", String.valueOf(Xn0));
+        Log.d("LCM Xn0 = ", String.valueOf(Xn0));
 
         for (i = 1; i <= 11; i++) {
 
@@ -115,6 +116,7 @@ public class KuisActivity extends AppCompatActivity {
                     SalahPopUp();
 
                 }
+
             }
         });
 
@@ -130,6 +132,7 @@ public class KuisActivity extends AppCompatActivity {
                     SalahPopUp();
 
                 }
+
             }
         });
 
@@ -144,6 +147,7 @@ public class KuisActivity extends AppCompatActivity {
                     SalahPopUp();
 
                 }
+
             }
         });
 
@@ -158,6 +162,7 @@ public class KuisActivity extends AppCompatActivity {
                     SalahPopUp();
 
                 }
+
             }
         });
 
@@ -173,6 +178,7 @@ public class KuisActivity extends AppCompatActivity {
             startActivity(i);
         } else {
             no_soal.setText("" + (indexKuis + 1));
+            Log.w("Algoritma LCM","X"+String.valueOf(indexKuis + 1)+"="+String.valueOf(randomSoal.get(indexKuis)));
             tv_soal.setText(dataSoal.getSoal(randomSoal.get(indexKuis) - 1));
             optiona.setText(dataSoal.getOpsi1(randomSoal.get(indexKuis) - 1));
             optionb.setText(dataSoal.getOpsi2(randomSoal.get(indexKuis) - 1));
@@ -184,13 +190,31 @@ public class KuisActivity extends AppCompatActivity {
         }
     }
 
+    public void MulaiKuis(){
+        notifDialog.setContentView(R.layout.kuis_awal);
+        btn_mulai = notifDialog.findViewById(R.id.button_mulai);
+        title_tv = notifDialog.findViewById(R.id.title_mulai);
+        message_tv = notifDialog.findViewById(R.id.message_benar);
+        btn_mulai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                notifDialog.dismiss();
+                lcm();
+                cekJawaban();
+            }
+        });
+
+        notifDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
+        notifDialog.show();
+    }
+
     public void BenarPopUp() {
         benar = benar + 1;
         notifDialog.setContentView(R.layout.pop_benar_layout);
         btn_benar = notifDialog.findViewById(R.id.button_benar);
         title_tv = notifDialog.findViewById(R.id.title_benar);
-        message_tv = notifDialog.findViewById(R.id.message_benar);
-
+        message_tv = notifDialog.findViewById(R.id.t_mulai);
+        onBackPressed();
         btn_benar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -209,7 +233,7 @@ public class KuisActivity extends AppCompatActivity {
         btn_salah = notifDialog.findViewById(R.id.button_salah);
         title_tv = notifDialog.findViewById(R.id.title_salah);
         message_tv = notifDialog.findViewById(R.id.message_salah);
-
+        onBackPressed();
         btn_salah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -220,6 +244,7 @@ public class KuisActivity extends AppCompatActivity {
 
         notifDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         notifDialog.show();
+
     }
 
     public void TimeoutPopUp() {
@@ -255,6 +280,7 @@ public class KuisActivity extends AppCompatActivity {
                 TimeoutPopUp();
             }
         }.start();
+
     }
 
     private void updateCountDownText() {
@@ -267,11 +293,31 @@ public class KuisActivity extends AppCompatActivity {
     }
 
     public void toHome(View view) {
-        onDestroy();
-        Intent closeIntent = new Intent(KuisActivity.this, MainActivity.class);
-        startActivity(closeIntent);
+        countDownTimer.cancel();
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(false);
+        builder.setMessage("Yakin keluar dari kuis?")
+                .setPositiveButton("YA", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        countDownTimer.cancel();
+                        Intent closeIntent = new Intent(KuisActivity.this, MainActivity.class);
+                        closeIntent.addCategory(Intent.CATEGORY_HOME);
+                        closeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(closeIntent);
+                    }
+                });
+        builder.setNegativeButton("TIDAK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                startCountDown();
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
 
     }
+
 
     @Override
     protected void onDestroy() {
@@ -283,8 +329,6 @@ public class KuisActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Toast.makeText(getApplicationContext(), "Tidak bisa kembali ke kuis. Silahkan selesaikan terlebih dahulu", Toast.LENGTH_SHORT).show();
     }
-
 
 }

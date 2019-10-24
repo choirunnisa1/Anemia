@@ -47,7 +47,7 @@
                     android:textColor="@color/White"
                     android:id="@+id/tv_gejala1"
                     style="@style/subtitle"
-                    android:drawableLeft="@drawable/atas"
+                    android:drawableLeft="@drawable/bawah"
                     android:background="@drawable/side_two"
                     android:text="  Gejala umum anemia"/>
                 <LinearLayout
@@ -72,7 +72,7 @@
                     android:textColor="@color/White"
                     android:id="@+id/tv_gejala2"
                     style="@style/subtitle"
-                    android:drawableLeft="@drawable/atas"
+                    android:drawableLeft="@drawable/bawah"
                     android:background="@drawable/side_two"
                     android:text="  Gejala khas masing-masing anemia"/>
                 <LinearLayout
@@ -128,7 +128,7 @@
                     android:textColor="@color/White"
                     android:id="@+id/tv_gejala3"
                     style="@style/subtitle"
-                    android:drawableLeft="@drawable/atas"
+                    android:drawableLeft="@drawable/bawah"
                     android:background="@drawable/side_two"
                     android:text="  Gejala penyakit dasar"/>
                 <LinearLayout

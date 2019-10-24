@@ -32,7 +32,7 @@ public class DataSoal {
     };
 
     private String jawaban[]={
-            "Sindroma anemia",
+            "Zat Besi",
             "Menekan sistem kekebalan tubuh",
             "Hemoglobin dalam Darah",
             "Anemia Defisiensi Besi",
@@ -61,7 +61,7 @@ public class DataSoal {
     };
 
     private String opsi[][]={
-            {"Sindroma anemia","Iskemia","Glossitis","Hipoferemia"},
+            {"Zat Besi","Hemoglobin","Oksigen","Karbohidrat"},
             {"Suplemen zat besi","Menambah kandungan protein","Menekan sistem kekebalan tubuh","Membantu sumsum tulang Anda membuat lebih banyak sel darah"},
             {"Hemoglobin dalam Darah","Mineral","Protein","Tekanan Darah"} ,
             {"Anemia Hemolitik","Anemia Megaloblastik","Anemia Defisiensi Besi","Anemia Kronis"},

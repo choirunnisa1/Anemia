@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/backdua"
+    android:background="@drawable/backban"
     android:padding="@dimen/activity_margin"
     tools:context=".Menu.BantuanActivity">
 
     <TextView
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/roboto"
         android:id="@+id/bantuan"
-        android:padding="15dp"
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/White"
@@ -20,16 +20,621 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="BANTUAN"/>
-
-    <com.codesgood.views.JustifiedTextView
-        android:layout_marginTop="80dp"
-        android:textColor="#000"
+    <TextView
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/White"
+        android:textAlignment="center"
+        android:text="Berikut merupakan fungsi dari tombol-tombol yang ada dalam aplikasi mobilia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="10dp"
-        android:fontFamily="@font/roboto"
-        android:text="Mobile learning anemia ini berisi materi dan kuis mengenai anemia.Adapun beberapa fungsi tombol yang perlu di perhatikan yaitu :"
-        android:textSize="14sp" />
+        android:textSize="14sp"/>
 
+<ScrollView
+    android:layout_marginTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/notebook"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp">
+                    </ImageView>
+                    <TextView
+                        android:textColor="#000"
+                        android:layout_marginTop="2dp"
+                        android:text="Materi"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/roboto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/line"
+                android:layout_width="4dp"
+                android:layout_height="50dp">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold"
+                    android:text=" Button Materi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#000"
+                    android:layout_marginLeft="5dp"
+                    android:text="Untuk menuju ke menu materi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/clipboard"></ImageView>
+                    <TextView
+                        android:textColor="#000"
+                        android:layout_marginTop="2dp"
+                        android:text="Kuis"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/roboto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/line"
+                android:layout_width="4dp"
+                android:layout_height="50dp">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold"
+                    android:text=" Button Kuis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#000"
+                    android:layout_marginLeft="5dp"
+                    android:text="Untuk menuju dan mengerjakan kuis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/ask"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp">
+                    </ImageView>
+                    <TextView
+                        android:textColor="#000"
+                        android:layout_marginTop="2dp"
+                        android:text="Bantuan"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/roboto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/line"
+                android:layout_width="4dp"
+                android:layout_height="50dp">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold"
+                    android:text=" Button Bantuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#000"
+                    android:layout_marginLeft="5dp"
+                    android:text="Untuk menampilkan panduan penggunaan button pada aplikasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="12dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/user"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp">
+                    </ImageView>
+                    <TextView
+                        android:textColor="#000"
+                        android:layout_marginTop="2dp"
+                        android:text="Tentang"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/roboto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/line"
+                android:layout_width="4dp"
+                android:layout_height="50dp">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold"
+                    android:text=" Button User"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#000"
+                    android:layout_marginLeft="5dp"
+                    android:text="Untuk menampilkan profil developer aplikasi mobilia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/White"
+                android:text="  (Judul Materi)"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/side_materi"
+                android:layout_width="100dp"
+                android:layout_height="30dp">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/line"
+                android:layout_width="4dp"
+                android:layout_height="60dp">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold"
+                    android:text=" Button Judul Materi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#000"
+                    android:layout_marginLeft="5dp"
+                    android:text="Untuk menuju ke halaman isi materi sesuai dengan button judul yang dipilih"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/White"
+                android:text="  ( Isi teks )"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/side_two"
+                android:drawableLeft="@drawable/bawah"
+                android:layout_width="100dp"
+                android:layout_height="30dp">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/line"
+                android:layout_width="4dp"
+                android:layout_height="50dp">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold"
+                    android:text=" Button Down"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#000"
+                    android:layout_marginLeft="5dp"
+                    android:text="Untuk menampilkan isi dari tab judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/White"
+                android:text="  ( Isi teks )"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/side_two"
+                android:drawableLeft="@drawable/atas"
+                android:layout_width="100dp"
+                android:layout_height="30dp">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/line"
+                android:layout_width="4dp"
+                android:layout_height="50dp">
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold"
+                    android:text=" Button Up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#000"
+                    android:layout_marginLeft="5dp"
+                    android:text="Untuk menyembunyikan isi dari tab judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_cancel"></ImageView>
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/line" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold"
+                    android:text=" Button Close"
+                    android:textColor="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <com.codesgood.views.JustifiedTextView
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/roboto"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"
+                android:text="Untuk keluar dari halaman kuis menuju ke menu utama"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/reading"></ImageView>
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/line" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold"
+                    android:text=" Button Materi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+            <com.codesgood.views.JustifiedTextView
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/roboto"
+                android:textColor="#000"
+                android:layout_marginLeft="5dp"
+                android:text="Untuk menuju ke menu materi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/house"></ImageView>
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/line" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold"
+                    android:text=" Button Home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#000"
+                    android:layout_marginLeft="5dp"
+                    android:text="Untuk menuju ke menu utama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/refresh"></ImageView>
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/line" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#000"
+                    android:fontFamily="@font/roboto"
+                    android:textStyle="bold"
+                    android:text=" Button Retry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <com.codesgood.views.JustifiedTextView
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#000"
+                    android:layout_marginLeft="5dp"
+                    android:text="Untuk mengulangi mengerjakan kuis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
 
 </LinearLayout>
