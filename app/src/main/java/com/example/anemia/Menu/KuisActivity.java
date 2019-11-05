@@ -72,15 +72,15 @@ public class KuisActivity extends AppCompatActivity {
 
     public void lcm() {
         int i;
-        int n = 20;
-        int a = 13;
-        int m = 23;
-        int c = 5;
+        int n = 25;
+        int a = 11;
+        int m = 25;
+        int c = 3;
         int Xn0;
         int[] Xn = new int[n];
 
         Random b = new Random();
-        Xn0 = b.nextInt(10 - 1) + 1;
+        Xn0 = b.nextInt((m-1)- 0) + 0;
         Log.d("LCM Xn0 = ", String.valueOf(Xn0));
 
         for (i = 1; i <= 11; i++) {

@@ -58,7 +58,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginRight="10dp"
                     android:fontFamily="@font/roboto"
-                    android:text="Makanan yang kaya akan zat besi, seperti daging sapi, kacang-kacangan, sereal yang diperkaya zat besi, sayuran berdaun hijau gelap, dan buah kering."
+                    android:text="Makanan yang kaya akan zat besi, seperti daging sapi, kacang-kacangan, sereal yang diperkaya zat besi, dan buah kering."
                     android:textSize="14sp"/>
             </LinearLayout>
             <LinearLayout

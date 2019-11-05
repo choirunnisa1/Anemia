@@ -28,7 +28,10 @@ public class DataSoal {
 
             "Fungsi dari hemoglobin adalah...",
             "Berikut merupakan jenis makanan yang dapat membantu mencegah anemia, kecuali...",
-            
+            "Salah satu gejala anemia defisiensi besi adalah pica. Apakah yang dimaksud dengan pica?",
+            "Erythropoietin adalah obat yang membantu sumsum tulang membuat lebih banyak...",
+
+
     };
 
     private String jawaban[]={
@@ -58,6 +61,8 @@ public class DataSoal {
 
             "Pengangkut oksigen dari paru-paru ke seluruh tubuh",
             "Makanan yang kaya akan zat kalsium",
+            "Suka pilih-pilih makanan",
+            "Sel darah",
     };
 
     private String opsi[][]={
@@ -87,7 +92,8 @@ public class DataSoal {
 
             {"Memperlancar peredaran darah","Pengangkut oksigen dari paru-paru ke seluruh tubuh","Pengangkut karbondioksida dari paru-paru ke seluruh tubuh","Pengangkut electron di dalam proses pembentukan energi di dalam sel"},
             {"Makanan yang kaya akan zat kalsium","Makanan yang kaya akan zat besi","Makanan yang kaya akan asam folat","Makanan yang kaya akan vitamin B12"},
-
+            {"Warna kulit yang pucat","Peradangan atau infeksi lidah","Suka pilih-pilih makanan","Sesak nafas"},
+            {"Protein","Zat Besi","Sel tulang","Sel darah"},
     };
 
     public  String getSoal(int a){
