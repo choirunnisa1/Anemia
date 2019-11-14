@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".Materi.AnemiaActivity">
 
+
     <TextView
         android:padding="10dp"
         android:fontFamily="@font/roboto"
@@ -23,14 +24,31 @@
         android:textAlignment="center"/>
 
    <LinearLayout
-       android:paddingLeft="@dimen/activity_margin"
-       android:paddingRight="@dimen/activity_margin"
        android:paddingBottom="@dimen/activity_margin"
        android:layout_width="match_parent"
        android:orientation="vertical"
        android:layout_height="wrap_content">
+       <ImageView
+           android:layout_marginTop="16dp"
+           android:scaleType="fitXY"
+           android:paddingRight="16dp"
+           android:paddingLeft="16dp"
+           android:src="@drawable/anemiak"
+           android:layout_width="match_parent"
+           android:layout_height="200dp">
+
+       </ImageView>
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:paddingLeft="@dimen/activity_margin"
+               android:paddingRight="@dimen/activity_margin"
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
     <com.codesgood.views.JustifiedTextView
-        android:paddingBottom="@dimen/activity_margin"
+        android:layout_marginBottom="8dp"
         android:paddingRight="@dimen/activity_margin"
         android:paddingLeft="@dimen/activity_margin"
         android:textColor="#000"
@@ -43,7 +61,9 @@
         android:layout_height="wrap_content" />
 
     <com.codesgood.views.JustifiedTextView
-        android:padding="@dimen/activity_margin"
+        android:layout_marginBottom="8dp"
+       android:paddingLeft="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
         android:id="@+id/subAnemia2"
         android:text="@string/anemia2"
         android:fontFamily="@font/roboto"
@@ -53,7 +73,9 @@
         android:layout_height="wrap_content" />
 
     <com.codesgood.views.JustifiedTextView
-        android:padding="@dimen/activity_margin"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+
         android:id="@+id/subAnemia3"
         android:text="@string/anemia3"
         android:fontFamily="@font/roboto"
@@ -61,6 +83,8 @@
         android:textColor="#000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+   </LinearLayout>
+       </ScrollView>
    </LinearLayout>
 
 </LinearLayout>
