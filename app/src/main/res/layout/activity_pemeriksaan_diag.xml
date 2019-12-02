@@ -18,7 +18,16 @@
         android:text="Pemeriksaan Diagnosis"
         android:textSize="32sp"
         android:textAlignment="center"/>
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:src="@drawable/pemeriksaaan"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
 
+    </ImageView>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
